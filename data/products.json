@@ -1,0 +1,372 @@
+﻿{
+    "products":  [
+                     {
+                         "id":  "bench-001",
+                         "dimensions":  "1950x500x520 мм",
+                         "category":  "bench",
+                         "sortOrder":  10,
+                         "name":  "Скамья садово-парковая",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/skamya-sadovo-parkovaya-1950/02.png",
+                                            "alt":  "Скамья садово-парковая"
+                                        },
+                                        {
+                                            "src":  "images/catalog/skamya-sadovo-parkovaya-1950/01.png",
+                                            "alt":  "Скамья садово-парковая"
+                                        }
+                                    ],
+                         "slug":  "skamya-sadovo-parkovaya-1950"
+                     },
+                     {
+                         "id":  "bench-002",
+                         "dimensions":  "1860x530x800 мм",
+                         "category":  "bench",
+                         "sortOrder":  20,
+                         "name":  "Диван садово-парковый",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/divan-sadovo-parkovyi-1860/01.jpg",
+                                            "alt":  "Диван садово-парковый"
+                                        },
+                                        {
+                                            "src":  "images/catalog/divan-sadovo-parkovyi-1860/02.jpg",
+                                            "alt":  "Диван садово-парковый"
+                                        }
+                                    ],
+                         "slug":  "divan-sadovo-parkovyi-1860"
+                     },
+                     {
+                         "id":  "bench-003",
+                         "dimensions":  "1950x495x515 мм",
+                         "category":  "bench",
+                         "sortOrder":  30,
+                         "name":  "Скамья садово-парковая",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/skamya-sadovo-parkovaya-1950-2/01.jpeg",
+                                            "alt":  "Скамья садово-парковая"
+                                        },
+                                        {
+                                            "src":  "images/catalog/skamya-sadovo-parkovaya-1950-2/02.jpg",
+                                            "alt":  "Скамья садово-парковая"
+                                        }
+                                    ],
+                         "slug":  "skamya-sadovo-parkovaya-1950-2"
+                     },
+                     {
+                         "id":  "bench-004",
+                         "dimensions":  "2850x685x820 мм",
+                         "category":  "bench",
+                         "sortOrder":  40,
+                         "name":  "Диван на чугунных ножках",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/divan-na-chugunnyh-nozhkah/01.jpg",
+                                            "alt":  "Диван на чугунных ножках"
+                                        },
+                                        {
+                                            "src":  "images/catalog/divan-na-chugunnyh-nozhkah/02.jpg",
+                                            "alt":  "Диван на чугунных ножках"
+                                        }
+                                    ],
+                         "slug":  "divan-na-chugunnyh-nozhkah"
+                     },
+                     {
+                         "id":  "bench-005",
+                         "dimensions":  "на заказ",
+                         "category":  "bench",
+                         "sortOrder":  50,
+                         "name":  "Скамья-тонель",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/skamya-tonel/01.png",
+                                            "alt":  "Скамья-тонель"
+                                        },
+                                        {
+                                            "src":  "images/catalog/skamya-tonel/02.jpg",
+                                            "alt":  "Скамья-тонель"
+                                        }
+                                    ],
+                         "slug":  "skamya-tonel"
+                     },
+                     {
+                         "id":  "trash-001",
+                         "dimensions":  "420x420x680 мм",
+                         "category":  "trash",
+                         "sortOrder":  60,
+                         "name":  "Урна деревянная с ж/б основанием",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/urna-derevyannaya-zhb/01.jpg",
+                                            "alt":  "Урна деревянная с ж/б основанием"
+                                        },
+                                        {
+                                            "src":  "images/catalog/urna-derevyannaya-zhb/02.png",
+                                            "alt":  "Урна деревянная с ж/б основанием"
+                                        }
+                                    ],
+                         "slug":  "urna-derevyannaya-zhb"
+                     },
+                     {
+                         "id":  "trash-002",
+                         "dimensions":  "420x420x680 мм",
+                         "category":  "trash",
+                         "sortOrder":  70,
+                         "name":  "Урна",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/urna-bazovaya/01.png",
+                                            "alt":  "Урна"
+                                        },
+                                        {
+                                            "src":  "images/catalog/urna-bazovaya/02.png",
+                                            "alt":  "Урна"
+                                        }
+                                    ],
+                         "slug":  "urna-bazovaya"
+                     },
+                     {
+                         "id":  "trash-003",
+                         "dimensions":  "420x420x680 мм",
+                         "category":  "trash",
+                         "sortOrder":  80,
+                         "name":  "Урна деревянная",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/urna-derevyannaya/01.png",
+                                            "alt":  "Урна деревянная"
+                                        },
+                                        {
+                                            "src":  "images/catalog/urna-derevyannaya/02.jpg",
+                                            "alt":  "Урна деревянная"
+                                        }
+                                    ],
+                         "slug":  "urna-derevyannaya"
+                     },
+                     {
+                         "id":  "trash-004",
+                         "dimensions":  "420x420x680 мм",
+                         "category":  "trash",
+                         "sortOrder":  90,
+                         "name":  "Урна деревянная",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/urna-derevyannaya-new/01.jpg",
+                                            "alt":  "Урна деревянная"
+                                        },
+                                        {
+                                            "src":  "images/catalog/urna-derevyannaya-new/02.jpg",
+                                            "alt":  "Урна деревянная"
+                                        }
+                                    ],
+                         "slug":  "urna-derevyannaya-new"
+                     },
+                     {
+                         "id":  "vases-001",
+                         "dimensions":  "на заказ",
+                         "category":  "vases",
+                         "sortOrder":  100,
+                         "name":  "Цветочница уличная",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/cvetochnica-ulichnaya/01.png",
+                                            "alt":  "Цветочница уличная"
+                                        },
+                                        {
+                                            "src":  "images/catalog/cvetochnica-ulichnaya/02.jpg",
+                                            "alt":  "Цветочница уличная"
+                                        }
+                                    ],
+                         "slug":  "cvetochnica-ulichnaya"
+                     },
+                     {
+                         "id":  "vases-002",
+                         "dimensions":  "на заказ",
+                         "category":  "vases",
+                         "sortOrder":  110,
+                         "name":  "Цветочница уличная(удлиненная)",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/cvetochnica-ulichnaya-udlinennaya/01.jpg",
+                                            "alt":  "Цветочница уличная(удлиненная)"
+                                        },
+                                        {
+                                            "src":  "images/catalog/cvetochnica-ulichnaya-udlinennaya/02.png",
+                                            "alt":  "Цветочница уличная(удлиненная)"
+                                        }
+                                    ],
+                         "slug":  "cvetochnica-ulichnaya-udlinennaya"
+                     },
+                     {
+                         "id":  "bicycle-001",
+                         "dimensions":  "521x150x929 мм",
+                         "category":  "bicycle",
+                         "sortOrder":  120,
+                         "name":  "Стойка для парковки велосипедов",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/stoika-parkovki-velosipedov-521/01.jpg",
+                                            "alt":  "Стойка для парковки велосипедов"
+                                        },
+                                        {
+                                            "src":  "images/catalog/stoika-parkovki-velosipedov-521/02.jpg",
+                                            "alt":  "Стойка для парковки велосипедов"
+                                        }
+                                    ],
+                         "slug":  "stoika-parkovki-velosipedov-521"
+                     },
+                     {
+                         "id":  "bicycle-002",
+                         "dimensions":  "1080x540x930 мм",
+                         "category":  "bicycle",
+                         "sortOrder":  130,
+                         "name":  "Стойка для парковки велосипедов",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/stoika-parkovki-velosipedov-1080/01.jpg",
+                                            "alt":  "Стойка для парковки велосипедов"
+                                        },
+                                        {
+                                            "src":  "images/catalog/stoika-parkovki-velosipedov-1080/02.jpg",
+                                            "alt":  "Стойка для парковки велосипедов"
+                                        }
+                                    ],
+                         "slug":  "stoika-parkovki-velosipedov-1080"
+                     },
+                     {
+                         "id":  "bicycle-003",
+                         "dimensions":  "1220x500x400 мм",
+                         "category":  "bicycle",
+                         "sortOrder":  140,
+                         "name":  "Стойка для парковки велосипедов",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/stoika-parkovki-velosipedov-1220/01.jpg",
+                                            "alt":  "Стойка для парковки велосипедов"
+                                        },
+                                        {
+                                            "src":  "images/catalog/stoika-parkovki-velosipedov-1220/02.jpg",
+                                            "alt":  "Стойка для парковки велосипедов"
+                                        }
+                                    ],
+                         "slug":  "stoika-parkovki-velosipedov-1220"
+                     },
+                     {
+                         "id":  "bicycle-004",
+                         "dimensions":  "на заказ",
+                         "category":  "bicycle",
+                         "sortOrder":  150,
+                         "name":  "Велопарковка Куб",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/veloparkovka-kub/01.png",
+                                            "alt":  "Велопарковка Куб"
+                                        },
+                                        {
+                                            "src":  "images/catalog/veloparkovka-kub/02.jpg",
+                                            "alt":  "Велопарковка Куб"
+                                        }
+                                    ],
+                         "slug":  "veloparkovka-kub"
+                     },
+                     {
+                         "id":  "enclosure-001",
+                         "dimensions":  "3930x2120x1900 мм",
+                         "category":  "enclosure",
+                         "sortOrder":  160,
+                         "name":  "Кабинка для переодевания",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/kabinka-dlya-pereodevaniya/01.jpg",
+                                            "alt":  "Кабинка для переодевания"
+                                        },
+                                        {
+                                            "src":  "images/catalog/kabinka-dlya-pereodevaniya/02.jpg",
+                                            "alt":  "Кабинка для переодевания"
+                                        }
+                                    ],
+                         "slug":  "kabinka-dlya-pereodevaniya"
+                     },
+                     {
+                         "id":  "enclosure-002",
+                         "dimensions":  "на заказ",
+                         "category":  "enclosure",
+                         "sortOrder":  170,
+                         "name":  "Парковый лежак",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/parkovyi-lezhak/01.jpg",
+                                            "alt":  "Парковый лежак"
+                                        },
+                                        {
+                                            "src":  "images/catalog/parkovyi-lezhak/02.jpg",
+                                            "alt":  "Парковый лежак"
+                                        }
+                                    ],
+                         "slug":  "parkovyi-lezhak"
+                     },
+                     {
+                         "id":  "enclosure-003",
+                         "dimensions":  "600x1200 мм",
+                         "category":  "enclosure",
+                         "sortOrder":  180,
+                         "name":  "Деревянная дорожка",
+                         "available":  true,
+                         "images":  [
+                                        {
+                                            "src":  "images/catalog/derevyannaya-dorozhka/01.jpg",
+                                            "alt":  "Деревянная дорожка"
+                                        },
+                                        {
+                                            "src":  "images/catalog/derevyannaya-dorozhka/02.jpg",
+                                            "alt":  "Деревянная дорожка"
+                                        }
+                                    ],
+                         "slug":  "derevyannaya-dorozhka"
+                     }
+                 ],
+    "categories":  [
+                       {
+                           "slug":  "bench",
+                           "name":  "Диваны и скамьи"
+                       },
+                       {
+                           "slug":  "trash",
+                           "name":  "Урны"
+                       },
+                       {
+                           "slug":  "vases",
+                           "name":  "Вазоны"
+                       },
+                       {
+                           "slug":  "furniture",
+                           "name":  "Садово-парковая мебель"
+                       },
+                       {
+                           "slug":  "bicycle",
+                           "name":  "Велопарковки"
+                       },
+                       {
+                           "slug":  "enclosure",
+                           "name":  "Уличные и дорожные ограждения"
+                       }
+                   ]
+}
