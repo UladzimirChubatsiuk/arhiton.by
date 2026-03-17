@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Technical and service paths
+Disallow: /includes/
+Disallow: /vendor/
+Disallow: /process-order.php
+Disallow: /process-order-config.php
+Disallow: /process-order-config.local.php
+
+Sitemap: https://arhiton.by/sitemap.xml

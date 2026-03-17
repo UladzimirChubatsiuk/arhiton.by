@@ -10,6 +10,7 @@
   var catalogData = null;
   var activeGalleryProduct = null;
   var activeGalleryIndex = 0;
+  var galleryBound = false;
   var collator = new Intl.Collator('ru', { sensitivity: 'base' });
 
   function normalizeString(value) {
@@ -47,13 +48,18 @@
 
   function syncStateToUrl() {
     var params = new URLSearchParams();
-    params.set('category', state.category);
-    params.set('sort', state.sort);
+    if (state.category && state.category !== 'all') {
+      params.set('category', state.category);
+    }
+    if (state.sort && state.sort !== 'manual') {
+      params.set('sort', state.sort);
+    }
     if (state.q) {
       params.set('q', state.q);
     }
 
-    var newUrl = window.location.pathname + '?' + params.toString();
+    var queryString = params.toString();
+    var newUrl = queryString ? window.location.pathname + '?' + queryString : window.location.pathname;
     window.history.replaceState({}, '', newUrl);
   }
 
@@ -62,7 +68,7 @@
     col.className = 'col-md-4 col-sm-6 col-xs-12';
 
     var card = document.createElement('div');
-    card.className = 'gtco-item catalog-card';
+    card.className = 'catalog-card';
 
     var media = document.createElement('div');
     media.className = 'catalog-card-media';
@@ -70,6 +76,7 @@
     var image = document.createElement('img');
     image.className = 'img-responsive';
     image.loading = 'lazy';
+    image.decoding = 'async';
 
     var firstImage = product.images && product.images.length ? product.images[0] : null;
     image.src = firstImage ? firstImage.src : 'images/no_tovar.png';
@@ -82,14 +89,15 @@
     media.appendChild(image);
 
     var title = document.createElement('h2');
-    var titleAnchor = document.createElement('a');
-    titleAnchor.href = '#';
-    titleAnchor.textContent = product.name;
-    titleAnchor.addEventListener('click', function (event) {
-      event.preventDefault();
+    var titleButton = document.createElement('button');
+    titleButton.type = 'button';
+    titleButton.className = 'catalog-card-title-button';
+    titleButton.textContent = product.name;
+    titleButton.setAttribute('aria-label', 'Открыть фото товара ' + product.name);
+    titleButton.addEventListener('click', function () {
       openGallery(product, 0);
     });
-    title.appendChild(titleAnchor);
+    title.appendChild(titleButton);
 
     var dimensions = document.createElement('p');
     dimensions.className = 'role';
@@ -170,7 +178,8 @@
         return true;
       }
 
-      var haystack = normalizeString(product.name + ' ' + product.dimensions);
+      var keywords = Array.isArray(product.keywords) ? product.keywords.join(' ') : '';
+      var haystack = normalizeString(product.name + ' ' + product.dimensions + ' ' + keywords);
       return haystack.indexOf(normalizedQuery) !== -1;
     });
 
@@ -286,6 +295,7 @@
       thumbImg.src = item.src;
       thumbImg.alt = item.alt || activeGalleryProduct.name;
       thumbImg.loading = 'lazy';
+      thumbImg.decoding = 'async';
 
       thumbBtn.appendChild(thumbImg);
       thumbBtn.addEventListener('click', function () {
@@ -323,11 +333,38 @@
     modal.setAttribute('aria-hidden', 'false');
   }
 
+  window.openCatalogGalleryImages = function (images, title, startIndex) {
+    if (!Array.isArray(images) || !images.length) {
+      return;
+    }
+
+    activeGalleryProduct = {
+      name: title || 'Галерея',
+      images: images.filter(function (item) {
+        return item && item.src;
+      })
+    };
+
+    if (!activeGalleryProduct.images.length) {
+      activeGalleryProduct = null;
+      return;
+    }
+
+    activeGalleryIndex = startIndex || 0;
+    openGallery(activeGalleryProduct, activeGalleryIndex);
+  };
+
   function bindGallery() {
     var modal = document.getElementById('catalogGalleryModal');
     var closeBtn = document.getElementById('catalogGalleryClose');
     var prevBtn = document.getElementById('catalogGalleryPrev');
     var nextBtn = document.getElementById('catalogGalleryNext');
+
+    if (galleryBound || !modal || !closeBtn || !prevBtn || !nextBtn) {
+      return;
+    }
+
+    galleryBound = true;
 
     closeBtn.addEventListener('click', closeGallery);
     prevBtn.addEventListener('click', function () {
@@ -379,12 +416,14 @@
   }
 
   function init() {
+    bindGallery();
+
     var grid = document.getElementById('catalogGrid');
     if (!grid) {
       return;
     }
 
-    fetch('data/products.json', { cache: 'no-store' })
+    fetch('data/products.json')
       .then(function (response) {
         if (!response.ok) {
           throw new Error('Не удалось загрузить каталог');
@@ -407,3 +446,4 @@
 
   document.addEventListener('DOMContentLoaded', init);
 })();
+

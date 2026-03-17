@@ -210,7 +210,7 @@
 			loop: true,
 			margin: 20,
 			nav: true,
-			dots: true,
+			dots: false,
 			autoplay: true,
 			autoplayTimeout: 5000,
 			autoplayHoverPause: false,

@@ -1,80 +1,58 @@
 ﻿<?php
-$pageTitle = 'Каталог &mdash; Ваша идея - наше воплощение!';
-$pageDescription = 'Архитон - производство малых архитектурных форм в Беларуси. Скамейки, урны, вазоны, велопарковки и ограждения. Индивидуальный подход, сертифицированные материалы.';
-$pageKeywords = 'малые архитектурные формы, благоустройство территории, уличная мебель, урны, скамейки, вазоны, велопарковки, ограждения, производство МАФ, Беларусь';
-$pageCanonical = 'https://arhiton.by';
-$currentPage = 'services.php';
-$extraHead = <<<'HTML'
+require_once __DIR__ . '/includes/seo.php';
 
-HTML;
-$extraScripts = <<<'HTML'
-		<script src="js/services.js"></script>
-		<script src="js/catalog.js"></script>
-HTML;
+$pageCanonicalPath = '/catalog';
+$extraScripts = '        <script src="' . arhiton_asset_path('/js/services.js') . '"></script>' . "\n"
+    . '        <script src="' . arhiton_asset_path('/js/catalog.js') . '"></script>';
 include __DIR__ . '/includes/header.php';
 ?>
 <div class="gtco-section gtco-services">
 			<div class="gtco-container">
-				<div class="row gtco-heading">
-					<div class="col-md-7 text-left">
-						<h2>Группы товаров и услуг</h2>
-						<p>Здесь вы найдёте широкий ассортимент малых архитектурных форм. Используйте фильтры и поиск, чтобы быстро подобрать подходящие решения для вашего проекта.</p>
+				<div class="row catalog-hero">
+					<div class="col-md-8">
+						<div class="catalog-hero__content">
+							<span class="catalog-hero__eyebrow">Каталог</span>
+							<h1 class="catalog-hero__title">Малые архитектурные формы для благоустройства и городской среды</h1>
+							<p class="catalog-hero__lead">В каталоге собраны решения для дворов, парков, общественных пространств и инфраструктурных объектов. Используйте фильтры и поиск, чтобы быстро подобрать изделия под ваш проект, стиль территории и условия эксплуатации.</p>
+							<div class="catalog-hero__points">
+								<div class="catalog-hero__point">Быстрый подбор по категориям и названию</div>
+								<div class="catalog-hero__point">Решения для жилых, общественных и городских пространств</div>
+								<div class="catalog-hero__point">Возможность адаптации изделия под задачу объекта</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-3 col-md-push-2 text-center">
-						<p class="mt-md">
-							<button class="btn btn-special btn-block" id="btn-special">Заказать</button>
-						</p>
+					<div class="col-md-4">
+						<aside class="catalog-hero__panel">
+							<div class="catalog-hero__panel-label">Подбор ассортимента</div>
+							<h2 class="catalog-hero__panel-title">Каталог для быстрого выбора и проектной комплектации</h2>
+							<p class="catalog-hero__panel-text">Подбирайте скамьи, урны, вазоны, светильники, кабинки и другие МАФ под архитектуру пространства, нагрузку и бюджет проекта.</p>
+							<div class="catalog-hero__stats">
+								<div class="catalog-hero__stat">
+									<span class="catalog-hero__stat-value">Категории</span>
+									<span class="catalog-hero__stat-text">от базовых изделий до нестандартных решений</span>
+								</div>
+								<div class="catalog-hero__stat">
+									<span class="catalog-hero__stat-value">Поиск</span>
+									<span class="catalog-hero__stat-text">для быстрого подбора по названию и параметрам</span>
+								</div>
+							</div>
+							<button class="btn btn-special btn-block catalog-hero__button" id="btn-special">Заказать</button>
+						</aside>
 					</div>
 				</div>
 
-				<div id="popupForm" class="popup-overlay" style="display: none;">
-					<div class="popup-content">
-						<span class="close-btn" id="closePopup">&times;</span>
-						<div id="formContent">
-							<h2>Оформление заявки</h2>
-							<p>Заполните форму, и мы свяжемся с вами для уточнения деталей.</p>
-							<form id="orderForm">
-								<div class="form-group">
-									<label for="name">Ваше имя:</label>
-									<input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-								</div>
-								<div class="form-group">
-									<label for="phone">Ваш телефон:</label>
-									<input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
-								</div>
-								<div class="form-group">
-									<label for="product">Выберите ассортимент:</label>
-									<select id="product" name="product" required>
-										<option value="" disabled selected>Выберите из списка</option>
-										<option value="product1">Диваны и скамьи</option>
-										<option value="product2">Урны</option>
-										<option value="product3">Вазоны</option>
-										<option value="product4">Садово-парковая мебель</option>
-										<option value="product5">Велопарковки</option>
-										<option value="product6">Уличные и дорожные ограждения</option>
-									</select>
-								</div>
-								<input type="hidden" id="selectedProductName" name="selected_product_name" value="">
-								<button type="submit" class="btn btn-special">Отправить заявку</button>
-							</form>
-						</div>
-						<div id="successMessage" style="display: none;">
-							<h2>Заявка успешно отправлена!</h2>
-							<p>Спасибо за ваш запрос. Мы свяжемся с вами в ближайшее время.</p>
-							<button id="closeMessage" class="btn btn-special">Закрыть</button>
-						</div>
-					</div>
-				</div>
+				<?php include __DIR__ . '/includes/order-popup.php'; ?>
 
 				<div class="catalog-controls">
 					<div class="catalog-filter-group" id="catalogCategoryFilters">
 						<button class="catalog-filter-btn is-active" data-category="all" type="button">Все</button>
-						<button class="catalog-filter-btn" data-category="bench" type="button">Диваны и скамьи</button>
+						<button class="catalog-filter-btn" data-category="bench" type="button">Скамьи</button>
 						<button class="catalog-filter-btn" data-category="trash" type="button">Урны</button>
-						<button class="catalog-filter-btn" data-category="vases" type="button">Вазоны</button>
-						<button class="catalog-filter-btn" data-category="furniture" type="button">Садово-парковая мебель</button>
-						<button class="catalog-filter-btn" data-category="bicycle" type="button">Велопарковки</button>
-						<button class="catalog-filter-btn" data-category="enclosure" type="button">Уличные и дорожные ограждения</button>
+						<button class="catalog-filter-btn" data-category="vases" type="button">Кашпо | Вазоны</button>
+						<button class="catalog-filter-btn" data-category="lights" type="button">Уличные светильники</button>
+						<button class="catalog-filter-btn" data-category="campfire_areas" type="button">Зоны кострища</button>
+						<button class="catalog-filter-btn" data-category="cabins" type="button">Кабинки для переодевания</button>
+						<button class="catalog-filter-btn" data-category="chairs" type="button">Шезлонги</button>
 					</div>
 					<div class="catalog-tools-row">
 						<div class="catalog-search-wrap">
@@ -110,86 +88,84 @@ include __DIR__ . '/includes/header.php';
 		</div>
 		<!-- Services -->
 
-	<div class="gtco-section">
-	<div class="gtco-container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
-				<h2>Отзывы от организаций</h2>
-			</div>
-		</div>
-		<div class="row">
-
-			<div class="col-md-12">
-				<div class="owl-carousel owl-carousel-carousel">
-					<div class="item">
-						<div class="gtco-item">
-							<img src="images/otzyv_1.jpg" alt="Отзывы организаций" class="img-responsive" onclick="openFullscreen(this)">
-						</div>
-					</div>
-					<div class="item">
-						<div class="gtco-item">
-							<img src="images/otzyv_2.jpg" alt="Отзывы организаций" class="img-responsive" onclick="openFullscreen(this)">
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</div>
-
-<script>
-function openFullscreen(img) {
-    const fullscreenImg = document.createElement('img');
-    fullscreenImg.src = img.src;
-    fullscreenImg.style.position = 'fixed';
-    fullscreenImg.style.top = '0';
-    fullscreenImg.style.left = '0';
-    fullscreenImg.style.width = '100%';
-    fullscreenImg.style.height = '100%';
-    fullscreenImg.style.objectFit = 'contain';
-    fullscreenImg.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
-    fullscreenImg.style.zIndex = '1000';
-    fullscreenImg.style.cursor = 'pointer';
-    fullscreenImg.onclick = () => document.body.removeChild(fullscreenImg);
-    document.body.appendChild(fullscreenImg);
-}
-</script>
-
-		<div class="gtco-section gto-features">
+		<section class="gtco-section catalog-content-block">
 			<div class="gtco-container">
 				<div class="row">
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-zip icon"></i>
-							<div class="copy">
-								<h3>Эстетика в мелких <br>деталях</h3>
-								<p>Мы разрабатываем малые архитектурные формы, которые подчеркивают стиль пространства.</p>
-								<p><a href="services.php" class="gtco-more">Подробнее</a></p>
-							</div>
+					<div class="col-md-10 col-md-offset-1">
+						<div class="catalog-content-intro text-center">
+							<span class="catalog-content-eyebrow">Подбор под задачу объекта</span>
+							<h2 id="catalog-content-title">Какие решения можно подобрать в каталоге Архитон</h2>
+							<p>Каталог помогает быстро подобрать МАФ под жилой комплекс, двор, парк, сквер, общественную территорию или инфраструктурный объект. Если типового решения недостаточно, мы адаптируем изделие под размеры, материалы и архитектуру пространства.</p>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-hummer icon"></i>
-							<div class="copy">
-								<h3>Индивидуальный подход к каждому проекту</h3>
-								<p>Наша команда помогает воплощать идеи клиентов, тщательно планируя расположение МАФ.</p>
-								<p><a href="services.php" class="gtco-more">Подробнее</a></p>
-							</div>
-						</div>
+				</div>
+				<div class="catalog-copy-grid">
+					<article class="catalog-copy-card">
+						<h3>Скамьи и зоны отдыха</h3>
+						<p>Подбираем скамьи для дворов, парков, набережных, жилых комплексов и общественных пространств, где важны устойчивость к нагрузке, удобство посадки и аккуратная интеграция в архитектурную среду.</p>
+					</article>
+					<article class="catalog-copy-card">
+						<h3>Урны, вазоны и малые элементы благоустройства</h3>
+						<p>Предлагаем бетонные урны, вазоны и кашпо для поддержания порядка и формирования визуально цельного пространства на общественных и коммерческих объектах.</p>
+					</article>
+					<article class="catalog-copy-card">
+						<h3>Светильники, кабинки и специализированные решения</h3>
+						<p>В каталоге собраны уличные светильники, кабинки для переодевания, шезлонги и зоны кострища для объектов отдыха, пляжей, общественных зон и сезонных пространств.</p>
+					</article>
+				</div>
+				<div class="catalog-content-note">
+					<p>Если вам нужен подбор под конкретный объект, откройте карточки в каталоге, отправьте заявку или <a href="/contacts">свяжитесь с нами</a> для расчета сроков и стоимости. Посмотреть реализованные решения можно в разделе <a href="/projects">проекты</a>.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="gtco-section catalog-faq-block">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
+						<h2 id="catalog-faq-title">Вопросы по каталогу и заказу</h2>
 					</div>
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-plug icon"></i>
-							<div class="copy">
-								<h3>Функциональность &amp; Комфорт</h3>
-								<p>Создаём удобные и долговечные решения для парков, зон отдыха и городских мероприятий.</p>
-								<p><a href="services.php" class="gtco-more">Подробнее</a></p>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel-group faq-accordion" id="catalogFaq" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="catalogFaqOneHeading">
+									<h3 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#catalogFaq" href="#catalogFaqOne" aria-expanded="true" aria-controls="catalogFaqOne">Можно ли адаптировать изделие под конкретный объект?</a>
+									</h3>
+								</div>
+								<div id="catalogFaqOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="catalogFaqOneHeading">
+									<div class="panel-body">Да, мы можем изменить размеры, материалы, цветовые решения и конструктив под архитектуру пространства, интенсивность эксплуатации и требования проекта.</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="catalogFaqTwoHeading">
+									<h3 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#catalogFaq" href="#catalogFaqTwo" aria-expanded="false" aria-controls="catalogFaqTwo">Как узнать стоимость изделий из каталога?</a>
+									</h3>
+								</div>
+								<div id="catalogFaqTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="catalogFaqTwoHeading">
+									<div class="panel-body">Стоимость зависит от модели, объема заказа, комплектации и особенностей изготовления. Для расчета отправьте заявку через каталог или свяжитесь с нами напрямую.</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="catalogFaqThreeHeading">
+									<h3 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#catalogFaq" href="#catalogFaqThree" aria-expanded="false" aria-controls="catalogFaqThree">Работаете ли вы только по Минску?</a>
+									</h3>
+								</div>
+								<div id="catalogFaqThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="catalogFaqThreeHeading">
+									<div class="panel-body">Нет, мы поставляем изделия по Минску и всей Беларуси, а при необходимости согласовываем доставку и установку на объекте.</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+
+
+
+<?php include __DIR__ . '/includes/features-strip.php'; ?>
 <?php include __DIR__ . '/includes/footer.php'; ?>

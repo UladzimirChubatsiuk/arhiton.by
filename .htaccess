@@ -1,0 +1,83 @@
+Options -Indexes -MultiViews
+AddDefaultCharset UTF-8
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|webp|woff2?|ttf)$">
+        Header set Cache-Control "public, max-age=2592000, immutable"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType font/woff "access plus 1 month"
+    ExpiresByType font/woff2 "access plus 1 month"
+    ExpiresByType application/font-woff "access plus 1 month"
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+ErrorDocument 404 /404
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteRule ^favicon\.ico$ /images/logo.png [L]
+
+    RewriteCond %{HTTP_HOST} ^www\.arhiton\.by$ [NC]
+    RewriteRule ^ https://arhiton.by%{REQUEST_URI} [R=301,L]
+
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?arhiton\.by$ [NC]
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://arhiton.by%{REQUEST_URI} [R=301,L]
+
+    RewriteCond %{THE_REQUEST} \s/+index\.php(?:[\s?]|$) [NC]
+    RewriteRule ^index\.php$ / [R=301,L]
+
+    RewriteCond %{THE_REQUEST} \s/+services\.php(?:[\s?]|$) [NC]
+    RewriteRule ^services\.php$ /catalog [R=301,L]
+
+    RewriteCond %{THE_REQUEST} \s/+portfolio\.php(?:[\s?]|$) [NC]
+    RewriteRule ^portfolio\.php$ /projects [R=301,L]
+
+    RewriteCond %{THE_REQUEST} \s/+about\.php(?:[\s?]|$) [NC]
+    RewriteRule ^about\.php$ /about-us [R=301,L]
+
+    RewriteCond %{THE_REQUEST} \s/+contact\.php(?:[\s?]|$) [NC]
+    RewriteRule ^contact\.php$ /contacts [R=301,L]
+
+    RewriteCond %{THE_REQUEST} \s/+privacy\.php(?:[\s?]|$) [NC]
+    RewriteRule ^privacy\.php$ /privacy-policy [R=301,L]
+
+    RewriteCond %{THE_REQUEST} \s/+terms\.php(?:[\s?]|$) [NC]
+    RewriteRule ^terms\.php$ /terms-of-use [R=301,L]
+
+    RewriteRule ^services/?$ /catalog [R=301,L,NC]
+    RewriteRule ^portfolio/?$ /projects [R=301,L,NC]
+    RewriteRule ^about/?$ /about-us [R=301,L,NC]
+    RewriteRule ^contact/?$ /contacts [R=301,L,NC]
+    RewriteRule ^privacy/?$ /privacy-policy [R=301,L,NC]
+    RewriteRule ^terms/?$ /terms-of-use [R=301,L,NC]
+
+    RewriteRule ^$ index.php [L]
+    RewriteRule ^catalog/?$ services.php [L,QSA,NC]
+    RewriteRule ^projects/?$ portfolio.php [L,QSA,NC]
+    RewriteRule ^about-us/?$ about.php [L,QSA,NC]
+    RewriteRule ^contacts/?$ contact.php [L,QSA,NC]
+    RewriteRule ^privacy-policy/?$ privacy.php [L,QSA,NC]
+    RewriteRule ^terms-of-use/?$ terms.php [L,QSA,NC]
+    RewriteRule ^404/?$ 404.php [L,NC]
+</IfModule>

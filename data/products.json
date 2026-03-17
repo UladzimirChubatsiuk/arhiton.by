@@ -1,372 +1,1834 @@
 ﻿{
-    "products":  [
-                     {
-                         "id":  "bench-001",
-                         "dimensions":  "1950x500x520 мм",
-                         "category":  "bench",
-                         "sortOrder":  10,
-                         "name":  "Скамья садово-парковая",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/skamya-sadovo-parkovaya-1950/02.png",
-                                            "alt":  "Скамья садово-парковая"
-                                        },
-                                        {
-                                            "src":  "images/catalog/skamya-sadovo-parkovaya-1950/01.png",
-                                            "alt":  "Скамья садово-парковая"
-                                        }
-                                    ],
-                         "slug":  "skamya-sadovo-parkovaya-1950"
-                     },
-                     {
-                         "id":  "bench-002",
-                         "dimensions":  "1860x530x800 мм",
-                         "category":  "bench",
-                         "sortOrder":  20,
-                         "name":  "Диван садово-парковый",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/divan-sadovo-parkovyi-1860/01.jpg",
-                                            "alt":  "Диван садово-парковый"
-                                        },
-                                        {
-                                            "src":  "images/catalog/divan-sadovo-parkovyi-1860/02.jpg",
-                                            "alt":  "Диван садово-парковый"
-                                        }
-                                    ],
-                         "slug":  "divan-sadovo-parkovyi-1860"
-                     },
-                     {
-                         "id":  "bench-003",
-                         "dimensions":  "1950x495x515 мм",
-                         "category":  "bench",
-                         "sortOrder":  30,
-                         "name":  "Скамья садово-парковая",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/skamya-sadovo-parkovaya-1950-2/01.jpeg",
-                                            "alt":  "Скамья садово-парковая"
-                                        },
-                                        {
-                                            "src":  "images/catalog/skamya-sadovo-parkovaya-1950-2/02.jpg",
-                                            "alt":  "Скамья садово-парковая"
-                                        }
-                                    ],
-                         "slug":  "skamya-sadovo-parkovaya-1950-2"
-                     },
-                     {
-                         "id":  "bench-004",
-                         "dimensions":  "2850x685x820 мм",
-                         "category":  "bench",
-                         "sortOrder":  40,
-                         "name":  "Диван на чугунных ножках",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/divan-na-chugunnyh-nozhkah/01.jpg",
-                                            "alt":  "Диван на чугунных ножках"
-                                        },
-                                        {
-                                            "src":  "images/catalog/divan-na-chugunnyh-nozhkah/02.jpg",
-                                            "alt":  "Диван на чугунных ножках"
-                                        }
-                                    ],
-                         "slug":  "divan-na-chugunnyh-nozhkah"
-                     },
-                     {
-                         "id":  "bench-005",
-                         "dimensions":  "на заказ",
-                         "category":  "bench",
-                         "sortOrder":  50,
-                         "name":  "Скамья-тонель",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/skamya-tonel/01.png",
-                                            "alt":  "Скамья-тонель"
-                                        },
-                                        {
-                                            "src":  "images/catalog/skamya-tonel/02.jpg",
-                                            "alt":  "Скамья-тонель"
-                                        }
-                                    ],
-                         "slug":  "skamya-tonel"
-                     },
-                     {
-                         "id":  "trash-001",
-                         "dimensions":  "420x420x680 мм",
-                         "category":  "trash",
-                         "sortOrder":  60,
-                         "name":  "Урна деревянная с ж/б основанием",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/urna-derevyannaya-zhb/01.jpg",
-                                            "alt":  "Урна деревянная с ж/б основанием"
-                                        },
-                                        {
-                                            "src":  "images/catalog/urna-derevyannaya-zhb/02.png",
-                                            "alt":  "Урна деревянная с ж/б основанием"
-                                        }
-                                    ],
-                         "slug":  "urna-derevyannaya-zhb"
-                     },
-                     {
-                         "id":  "trash-002",
-                         "dimensions":  "420x420x680 мм",
-                         "category":  "trash",
-                         "sortOrder":  70,
-                         "name":  "Урна",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/urna-bazovaya/01.png",
-                                            "alt":  "Урна"
-                                        },
-                                        {
-                                            "src":  "images/catalog/urna-bazovaya/02.png",
-                                            "alt":  "Урна"
-                                        }
-                                    ],
-                         "slug":  "urna-bazovaya"
-                     },
-                     {
-                         "id":  "trash-003",
-                         "dimensions":  "420x420x680 мм",
-                         "category":  "trash",
-                         "sortOrder":  80,
-                         "name":  "Урна деревянная",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/urna-derevyannaya/01.png",
-                                            "alt":  "Урна деревянная"
-                                        },
-                                        {
-                                            "src":  "images/catalog/urna-derevyannaya/02.jpg",
-                                            "alt":  "Урна деревянная"
-                                        }
-                                    ],
-                         "slug":  "urna-derevyannaya"
-                     },
-                     {
-                         "id":  "trash-004",
-                         "dimensions":  "420x420x680 мм",
-                         "category":  "trash",
-                         "sortOrder":  90,
-                         "name":  "Урна деревянная",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/urna-derevyannaya-new/01.jpg",
-                                            "alt":  "Урна деревянная"
-                                        },
-                                        {
-                                            "src":  "images/catalog/urna-derevyannaya-new/02.jpg",
-                                            "alt":  "Урна деревянная"
-                                        }
-                                    ],
-                         "slug":  "urna-derevyannaya-new"
-                     },
-                     {
-                         "id":  "vases-001",
-                         "dimensions":  "на заказ",
-                         "category":  "vases",
-                         "sortOrder":  100,
-                         "name":  "Цветочница уличная",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/cvetochnica-ulichnaya/01.png",
-                                            "alt":  "Цветочница уличная"
-                                        },
-                                        {
-                                            "src":  "images/catalog/cvetochnica-ulichnaya/02.jpg",
-                                            "alt":  "Цветочница уличная"
-                                        }
-                                    ],
-                         "slug":  "cvetochnica-ulichnaya"
-                     },
-                     {
-                         "id":  "vases-002",
-                         "dimensions":  "на заказ",
-                         "category":  "vases",
-                         "sortOrder":  110,
-                         "name":  "Цветочница уличная(удлиненная)",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/cvetochnica-ulichnaya-udlinennaya/01.jpg",
-                                            "alt":  "Цветочница уличная(удлиненная)"
-                                        },
-                                        {
-                                            "src":  "images/catalog/cvetochnica-ulichnaya-udlinennaya/02.png",
-                                            "alt":  "Цветочница уличная(удлиненная)"
-                                        }
-                                    ],
-                         "slug":  "cvetochnica-ulichnaya-udlinennaya"
-                     },
-                     {
-                         "id":  "bicycle-001",
-                         "dimensions":  "521x150x929 мм",
-                         "category":  "bicycle",
-                         "sortOrder":  120,
-                         "name":  "Стойка для парковки велосипедов",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/stoika-parkovki-velosipedov-521/01.jpg",
-                                            "alt":  "Стойка для парковки велосипедов"
-                                        },
-                                        {
-                                            "src":  "images/catalog/stoika-parkovki-velosipedov-521/02.jpg",
-                                            "alt":  "Стойка для парковки велосипедов"
-                                        }
-                                    ],
-                         "slug":  "stoika-parkovki-velosipedov-521"
-                     },
-                     {
-                         "id":  "bicycle-002",
-                         "dimensions":  "1080x540x930 мм",
-                         "category":  "bicycle",
-                         "sortOrder":  130,
-                         "name":  "Стойка для парковки велосипедов",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/stoika-parkovki-velosipedov-1080/01.jpg",
-                                            "alt":  "Стойка для парковки велосипедов"
-                                        },
-                                        {
-                                            "src":  "images/catalog/stoika-parkovki-velosipedov-1080/02.jpg",
-                                            "alt":  "Стойка для парковки велосипедов"
-                                        }
-                                    ],
-                         "slug":  "stoika-parkovki-velosipedov-1080"
-                     },
-                     {
-                         "id":  "bicycle-003",
-                         "dimensions":  "1220x500x400 мм",
-                         "category":  "bicycle",
-                         "sortOrder":  140,
-                         "name":  "Стойка для парковки велосипедов",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/stoika-parkovki-velosipedov-1220/01.jpg",
-                                            "alt":  "Стойка для парковки велосипедов"
-                                        },
-                                        {
-                                            "src":  "images/catalog/stoika-parkovki-velosipedov-1220/02.jpg",
-                                            "alt":  "Стойка для парковки велосипедов"
-                                        }
-                                    ],
-                         "slug":  "stoika-parkovki-velosipedov-1220"
-                     },
-                     {
-                         "id":  "bicycle-004",
-                         "dimensions":  "на заказ",
-                         "category":  "bicycle",
-                         "sortOrder":  150,
-                         "name":  "Велопарковка Куб",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/veloparkovka-kub/01.png",
-                                            "alt":  "Велопарковка Куб"
-                                        },
-                                        {
-                                            "src":  "images/catalog/veloparkovka-kub/02.jpg",
-                                            "alt":  "Велопарковка Куб"
-                                        }
-                                    ],
-                         "slug":  "veloparkovka-kub"
-                     },
-                     {
-                         "id":  "enclosure-001",
-                         "dimensions":  "3930x2120x1900 мм",
-                         "category":  "enclosure",
-                         "sortOrder":  160,
-                         "name":  "Кабинка для переодевания",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/kabinka-dlya-pereodevaniya/01.jpg",
-                                            "alt":  "Кабинка для переодевания"
-                                        },
-                                        {
-                                            "src":  "images/catalog/kabinka-dlya-pereodevaniya/02.jpg",
-                                            "alt":  "Кабинка для переодевания"
-                                        }
-                                    ],
-                         "slug":  "kabinka-dlya-pereodevaniya"
-                     },
-                     {
-                         "id":  "enclosure-002",
-                         "dimensions":  "на заказ",
-                         "category":  "enclosure",
-                         "sortOrder":  170,
-                         "name":  "Парковый лежак",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/parkovyi-lezhak/01.jpg",
-                                            "alt":  "Парковый лежак"
-                                        },
-                                        {
-                                            "src":  "images/catalog/parkovyi-lezhak/02.jpg",
-                                            "alt":  "Парковый лежак"
-                                        }
-                                    ],
-                         "slug":  "parkovyi-lezhak"
-                     },
-                     {
-                         "id":  "enclosure-003",
-                         "dimensions":  "600x1200 мм",
-                         "category":  "enclosure",
-                         "sortOrder":  180,
-                         "name":  "Деревянная дорожка",
-                         "available":  true,
-                         "images":  [
-                                        {
-                                            "src":  "images/catalog/derevyannaya-dorozhka/01.jpg",
-                                            "alt":  "Деревянная дорожка"
-                                        },
-                                        {
-                                            "src":  "images/catalog/derevyannaya-dorozhka/02.jpg",
-                                            "alt":  "Деревянная дорожка"
-                                        }
-                                    ],
-                         "slug":  "derevyannaya-dorozhka"
-                     }
-                 ],
-    "categories":  [
-                       {
-                           "slug":  "bench",
-                           "name":  "Диваны и скамьи"
-                       },
-                       {
-                           "slug":  "trash",
-                           "name":  "Урны"
-                       },
-                       {
-                           "slug":  "vases",
-                           "name":  "Вазоны"
-                       },
-                       {
-                           "slug":  "furniture",
-                           "name":  "Садово-парковая мебель"
-                       },
-                       {
-                           "slug":  "bicycle",
-                           "name":  "Велопарковки"
-                       },
-                       {
-                           "slug":  "enclosure",
-                           "name":  "Уличные и дорожные ограждения"
-                       }
-                   ]
+    "products": [
+        {
+            "id": "cabins-001",
+            "slug": "cabins_1",
+            "category": "cabins",
+            "sortOrder": 901,
+            "name": "Кабинка М1",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "кабинка для переодевания",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/cabins_1/01.png",
+                    "alt": "Кабинка для переодевания модель 1"
+                }
+            ]
+        },
+        {
+            "id": "cabins-002",
+            "slug": "cabins_2",
+            "category": "cabins",
+            "sortOrder": 902,
+            "name": "Кабинка М2",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "кабинка для переодевания",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/cabins_2/01.png",
+                    "alt": "Кабинка для переодевания модель 2"
+                }
+            ]
+        },
+        {
+            "id": "cabins-003",
+            "slug": "cabins_3",
+            "category": "cabins",
+            "sortOrder": 903,
+            "name": "Кабинка М3",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "кабинка для переодевания",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/cabins_3/01.png",
+                    "alt": "Кабинка для переодевания модель 3"
+                }
+            ]
+        },
+        {
+            "id": "campfire-001",
+            "slug": "campfire_1",
+            "category": "campfire_areas",
+            "sortOrder": 801,
+            "name": "Кострище М1",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "зона кострища",
+                "зона отдыха",
+                "благоустройство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/campfire_1/01.png",
+                    "alt": "Зона кострища модель 1"
+                },
+                {
+                    "src": "images/catalog/campfire_1/02.png",
+                    "alt": "Зона кострища модель 1"
+                }
+            ]
+        },
+        {
+            "id": "campfire-002",
+            "slug": "campfire_2",
+            "category": "campfire_areas",
+            "sortOrder": 802,
+            "name": "Кострище М2",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "зона кострища",
+                "зона отдыха",
+                "благоустройство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/campfire_2/01.png",
+                    "alt": "Зона кострища модель 2"
+                },
+                {
+                    "src": "images/catalog/campfire_2/02.png",
+                    "alt": "Зона кострища модель 2"
+                }
+            ]
+        },
+        {
+            "id": "campfire-003",
+            "slug": "campfire_3",
+            "category": "campfire_areas",
+            "sortOrder": 803,
+            "name": "Кострище М3",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "зона кострища",
+                "зона отдыха",
+                "благоустройство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/campfire_3/01.png",
+                    "alt": "Зона кострища модель 3"
+                },
+                {
+                    "src": "images/catalog/campfire_3/02.png",
+                    "alt": "Зона кострища модель 3"
+                }
+            ]
+        },
+        {
+            "id": "chairs-001",
+            "slug": "lounge-chair_1",
+            "category": "chairs",
+            "sortOrder": 1001,
+            "name": "Шезлонг М1",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "шезлонг",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/lounge-chair_1/01.png",
+                    "alt": "Шезлонг модель 1"
+                }
+            ]
+        },
+        {
+            "id": "chairs-010",
+            "slug": "lounge-chair_10",
+            "category": "chairs",
+            "sortOrder": 1010,
+            "name": "Шезлонг М10",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "шезлонг",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/lounge-chair_10/01.png",
+                    "alt": "Шезлонг модель 10"
+                }
+            ]
+        },
+        {
+            "id": "chairs-002",
+            "slug": "lounge-chair_2",
+            "category": "chairs",
+            "sortOrder": 1002,
+            "name": "Шезлонг М2",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "шезлонг",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/lounge-chair_2/01.png",
+                    "alt": "Шезлонг модель 2"
+                }
+            ]
+        },
+        {
+            "id": "chairs-003",
+            "slug": "lounge-chair_3",
+            "category": "chairs",
+            "sortOrder": 1003,
+            "name": "Шезлонг М3",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "шезлонг",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/lounge-chair_3/01.png",
+                    "alt": "Шезлонг модель 3"
+                }
+            ]
+        },
+        {
+            "id": "chairs-004",
+            "slug": "lounge-chair_4",
+            "category": "chairs",
+            "sortOrder": 1004,
+            "name": "Шезлонг М4",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "шезлонг",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/lounge-chair_4/01.png",
+                    "alt": "Шезлонг модель 4"
+                }
+            ]
+        },
+        {
+            "id": "chairs-005",
+            "slug": "lounge-chair_5",
+            "category": "chairs",
+            "sortOrder": 1005,
+            "name": "Шезлонг М5",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "шезлонг",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/lounge-chair_5/01.png",
+                    "alt": "Шезлонг модель 5"
+                }
+            ]
+        },
+        {
+            "id": "chairs-006",
+            "slug": "lounge-chair_6",
+            "category": "chairs",
+            "sortOrder": 1006,
+            "name": "Шезлонг М6",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "шезлонг",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/lounge-chair_6/01.png",
+                    "alt": "Шезлонг модель 6"
+                }
+            ]
+        },
+        {
+            "id": "chairs-007",
+            "slug": "lounge-chair_7",
+            "category": "chairs",
+            "sortOrder": 1007,
+            "name": "Шезлонг М7",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "шезлонг",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/lounge-chair_7/01.png",
+                    "alt": "Шезлонг модель 7"
+                }
+            ]
+        },
+        {
+            "id": "chairs-008",
+            "slug": "lounge-chair_8",
+            "category": "chairs",
+            "sortOrder": 1008,
+            "name": "Шезлонг М8",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "шезлонг",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/lounge-chair_8/01.png",
+                    "alt": "Шезлонг модель 8"
+                }
+            ]
+        },
+        {
+            "id": "chairs-009",
+            "slug": "lounge-chair_9",
+            "category": "chairs",
+            "sortOrder": 1009,
+            "name": "Шезлонг М9",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "шезлонг",
+                "пляж",
+                "зона отдыха",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/lounge-chair_9/01.png",
+                    "alt": "Шезлонг модель 9"
+                }
+            ]
+        },
+        {
+            "id": "lights-001",
+            "slug": "luminaire_1",
+            "category": "lights",
+            "sortOrder": 701,
+            "name": "Светильник М1",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "уличный светильник",
+                "освещение",
+                "благоустройство",
+                "городская среда"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/luminaire_1/01.png",
+                    "alt": "Светильник уличный модель 1"
+                }
+            ]
+        },
+        {
+            "id": "lights-002",
+            "slug": "luminaire_2",
+            "category": "lights",
+            "sortOrder": 702,
+            "name": "Светильник М2",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "уличный светильник",
+                "освещение",
+                "благоустройство",
+                "городская среда"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/luminaire_2/01.png",
+                    "alt": "Светильник уличный модель 2"
+                }
+            ]
+        },
+        {
+            "id": "lights-003",
+            "slug": "luminaire_3",
+            "category": "lights",
+            "sortOrder": 703,
+            "name": "Светильник М3",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "уличный светильник",
+                "освещение",
+                "благоустройство",
+                "городская среда"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/luminaire_3/01.png",
+                    "alt": "Светильник уличный модель 3"
+                }
+            ]
+        },
+        {
+            "id": "lights-004",
+            "slug": "luminaire_4",
+            "category": "lights",
+            "sortOrder": 704,
+            "name": "Светильник М4",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "уличный светильник",
+                "освещение",
+                "благоустройство",
+                "городская среда"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/luminaire_4/01.png",
+                    "alt": "Светильник уличный модель 4"
+                }
+            ]
+        },
+        {
+            "id": "lights-005",
+            "slug": "luminaire_5",
+            "category": "lights",
+            "sortOrder": 705,
+            "name": "Светильник М5",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "уличный светильник",
+                "освещение",
+                "благоустройство",
+                "городская среда"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/luminaire_5/01.png",
+                    "alt": "Светильник уличный модель 5"
+                }
+            ]
+        },
+        {
+            "id": "lights-006",
+            "slug": "luminaire_6",
+            "category": "lights",
+            "sortOrder": 706,
+            "name": "Светильник М6",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "уличный светильник",
+                "освещение",
+                "благоустройство",
+                "городская среда"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/luminaire_6/01.png",
+                    "alt": "Светильник уличный модель 6"
+                }
+            ]
+        },
+        {
+            "id": "bench-001",
+            "slug": "skamya_1",
+            "category": "bench",
+            "sortOrder": 101,
+            "name": "Скамья М1",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_1/01.png",
+                    "alt": "Скамья садово-парковая"
+                },
+                {
+                    "src": "images/catalog/skamya_1/02.png",
+                    "alt": "Скамья садово-парковая"
+                },
+                {
+                    "src": "images/catalog/skamya_1/03.png",
+                    "alt": "Скамья садово-парковая"
+                },
+                {
+                    "src": "images/catalog/skamya_1/04.png",
+                    "alt": "Скамья садово-парковая"
+                }
+            ]
+        },
+        {
+            "id": "bench-010",
+            "slug": "skamya_10",
+            "category": "bench",
+            "sortOrder": 110,
+            "name": "Скамья М10",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_10/01.png",
+                    "alt": "Скамья бетонная модель 10"
+                },
+                {
+                    "src": "images/catalog/skamya_10/02.png",
+                    "alt": "Скамья бетонная модель 10"
+                },
+                {
+                    "src": "images/catalog/skamya_10/03.png",
+                    "alt": "Скамья бетонная модель 10"
+                }
+            ]
+        },
+        {
+            "id": "bench-011",
+            "slug": "skamya_11",
+            "category": "bench",
+            "sortOrder": 111,
+            "name": "Скамья М11",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_11/01.png",
+                    "alt": "Скамья бетонная модель 11"
+                },
+                {
+                    "src": "images/catalog/skamya_11/02.png",
+                    "alt": "Скамья бетонная модель 11"
+                },
+                {
+                    "src": "images/catalog/skamya_11/03.png",
+                    "alt": "Скамья бетонная модель 11"
+                }
+            ]
+        },
+        {
+            "id": "bench-012",
+            "slug": "skamya_12",
+            "category": "bench",
+            "sortOrder": 112,
+            "name": "Скамья М12",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_12/01.png",
+                    "alt": "Скамья бетонная модель 12"
+                },
+                {
+                    "src": "images/catalog/skamya_12/02.png",
+                    "alt": "Скамья бетонная модель 12"
+                },
+                {
+                    "src": "images/catalog/skamya_12/03.png",
+                    "alt": "Скамья бетонная модель 12"
+                }
+            ]
+        },
+        {
+            "id": "bench-013",
+            "slug": "skamya_13",
+            "category": "bench",
+            "sortOrder": 113,
+            "name": "Скамья М13",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_13/01.png",
+                    "alt": "Скамья бетонная модель 13"
+                },
+                {
+                    "src": "images/catalog/skamya_13/02.png",
+                    "alt": "Скамья бетонная модель 13"
+                },
+                {
+                    "src": "images/catalog/skamya_13/03.png",
+                    "alt": "Скамья бетонная модель 13"
+                }
+            ]
+        },
+        {
+            "id": "bench-014",
+            "slug": "skamya_14",
+            "category": "bench",
+            "sortOrder": 114,
+            "name": "Скамья М14",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_14/01.png",
+                    "alt": "Скамья бетонная модель 14"
+                },
+                {
+                    "src": "images/catalog/skamya_14/02.png",
+                    "alt": "Скамья бетонная модель 14"
+                },
+                {
+                    "src": "images/catalog/skamya_14/03.png",
+                    "alt": "Скамья бетонная модель 14"
+                }
+            ]
+        },
+        {
+            "id": "bench-015",
+            "slug": "skamya_15",
+            "category": "bench",
+            "sortOrder": 115,
+            "name": "Скамья М15",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_15/01.png",
+                    "alt": "Скамья бетонная модель 15"
+                },
+                {
+                    "src": "images/catalog/skamya_15/02.png",
+                    "alt": "Скамья бетонная модель 15"
+                },
+                {
+                    "src": "images/catalog/skamya_15/03.png",
+                    "alt": "Скамья бетонная модель 15"
+                }
+            ]
+        },
+        {
+            "id": "bench-016",
+            "slug": "skamya_16",
+            "category": "bench",
+            "sortOrder": 116,
+            "name": "Скамья М16",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_16/01.png",
+                    "alt": "Скамья бетонная модель 16"
+                },
+                {
+                    "src": "images/catalog/skamya_16/02.png",
+                    "alt": "Скамья бетонная модель 16"
+                },
+                {
+                    "src": "images/catalog/skamya_16/03.png",
+                    "alt": "Скамья бетонная модель 16"
+                }
+            ]
+        },
+        {
+            "id": "bench-017",
+            "slug": "skamya_17",
+            "category": "bench",
+            "sortOrder": 117,
+            "name": "Скамья М17",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_17/01.png",
+                    "alt": "Скамья бетонная модель 17"
+                },
+                {
+                    "src": "images/catalog/skamya_17/02.png",
+                    "alt": "Скамья бетонная модель 17"
+                },
+                {
+                    "src": "images/catalog/skamya_17/03.png",
+                    "alt": "Скамья бетонная модель 17"
+                }
+            ]
+        },
+        {
+            "id": "bench-018",
+            "slug": "skamya_18",
+            "category": "bench",
+            "sortOrder": 118,
+            "name": "Скамья М18",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_18/01.png",
+                    "alt": "Скамья бетонная модель 18"
+                },
+                {
+                    "src": "images/catalog/skamya_18/02.png",
+                    "alt": "Скамья бетонная модель 18"
+                },
+                {
+                    "src": "images/catalog/skamya_18/03.png",
+                    "alt": "Скамья бетонная модель 18"
+                }
+            ]
+        },
+        {
+            "id": "bench-019",
+            "slug": "skamya_19",
+            "category": "bench",
+            "sortOrder": 119,
+            "name": "Скамья М19",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_19/01.png",
+                    "alt": "Скамья бетонная модель 19"
+                },
+                {
+                    "src": "images/catalog/skamya_19/02.png",
+                    "alt": "Скамья бетонная модель 19"
+                },
+                {
+                    "src": "images/catalog/skamya_19/03.png",
+                    "alt": "Скамья бетонная модель 19"
+                }
+            ]
+        },
+        {
+            "id": "bench-002",
+            "slug": "skamya_2",
+            "category": "bench",
+            "sortOrder": 102,
+            "name": "Диван М2",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_2/01.png",
+                    "alt": "Диван садово-парковый"
+                },
+                {
+                    "src": "images/catalog/skamya_2/02.png",
+                    "alt": "Диван садово-парковый"
+                },
+                {
+                    "src": "images/catalog/skamya_2/03.png",
+                    "alt": "Диван садово-парковый"
+                }
+            ]
+        },
+        {
+            "id": "bench-020",
+            "slug": "skamya_20",
+            "category": "bench",
+            "sortOrder": 120,
+            "name": "Скамья М20",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_20/01.png",
+                    "alt": "Скамья бетонная модель 20"
+                },
+                {
+                    "src": "images/catalog/skamya_20/02.png",
+                    "alt": "Скамья бетонная модель 20"
+                },
+                {
+                    "src": "images/catalog/skamya_20/03.png",
+                    "alt": "Скамья бетонная модель 20"
+                }
+            ]
+        },
+        {
+            "id": "bench-021",
+            "slug": "skamya_21",
+            "category": "bench",
+            "sortOrder": 121,
+            "name": "Скамья М21",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_21/01.png",
+                    "alt": "Скамья бетонная модель 21"
+                },
+                {
+                    "src": "images/catalog/skamya_21/02.png",
+                    "alt": "Скамья бетонная модель 21"
+                },
+                {
+                    "src": "images/catalog/skamya_21/03.png",
+                    "alt": "Скамья бетонная модель 21"
+                }
+            ]
+        },
+        {
+            "id": "bench-022",
+            "slug": "skamya_22",
+            "category": "bench",
+            "sortOrder": 122,
+            "name": "Скамья М22",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_22/01.png",
+                    "alt": "Скамья бетонная модель 22"
+                },
+                {
+                    "src": "images/catalog/skamya_22/02.png",
+                    "alt": "Скамья бетонная модель 22"
+                },
+                {
+                    "src": "images/catalog/skamya_22/03.png",
+                    "alt": "Скамья бетонная модель 22"
+                }
+            ]
+        },
+        {
+            "id": "bench-023",
+            "slug": "skamya_23",
+            "category": "bench",
+            "sortOrder": 123,
+            "name": "Скамья М23",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_23/01.png",
+                    "alt": "Скамья бетонная модель 23"
+                },
+                {
+                    "src": "images/catalog/skamya_23/02.png",
+                    "alt": "Скамья бетонная модель 23"
+                }
+            ]
+        },
+        {
+            "id": "bench-003",
+            "slug": "skamya_3",
+            "category": "bench",
+            "sortOrder": 103,
+            "name": "Скамья М3",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_3/01.png",
+                    "alt": "Скамья садово-парковая"
+                },
+                {
+                    "src": "images/catalog/skamya_3/02.png",
+                    "alt": "Скамья садово-парковая"
+                }
+            ]
+        },
+        {
+            "id": "bench-004",
+            "slug": "skamya_4",
+            "category": "bench",
+            "sortOrder": 104,
+            "name": "Скамья М4",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_4/01.png",
+                    "alt": "Скамья садово-парковая"
+                },
+                {
+                    "src": "images/catalog/skamya_4/02.png",
+                    "alt": "Скамья садово-парковая"
+                }
+            ]
+        },
+        {
+            "id": "bench-005",
+            "slug": "skamya_5",
+            "category": "bench",
+            "sortOrder": 105,
+            "name": "Скамья М5",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_5/01.png",
+                    "alt": "Скамья бетонная модель 5"
+                },
+                {
+                    "src": "images/catalog/skamya_5/02.png",
+                    "alt": "Скамья бетонная модель 5"
+                },
+                {
+                    "src": "images/catalog/skamya_5/03.png",
+                    "alt": "Скамья бетонная модель 5"
+                }
+            ]
+        },
+        {
+            "id": "bench-006",
+            "slug": "skamya_6",
+            "category": "bench",
+            "sortOrder": 106,
+            "name": "Скамья М6",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_6/01.png",
+                    "alt": "Скамья бетонная модель 6"
+                },
+                {
+                    "src": "images/catalog/skamya_6/02.png",
+                    "alt": "Скамья бетонная модель 6"
+                },
+                {
+                    "src": "images/catalog/skamya_6/03.png",
+                    "alt": "Скамья бетонная модель 6"
+                }
+            ]
+        },
+        {
+            "id": "bench-007",
+            "slug": "skamya_7",
+            "category": "bench",
+            "sortOrder": 107,
+            "name": "Скамья М7",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_7/01.png",
+                    "alt": "Скамья бетонная модель 7"
+                },
+                {
+                    "src": "images/catalog/skamya_7/02.png",
+                    "alt": "Скамья бетонная модель 7"
+                },
+                {
+                    "src": "images/catalog/skamya_7/03.png",
+                    "alt": "Скамья бетонная модель 7"
+                }
+            ]
+        },
+        {
+            "id": "bench-008",
+            "slug": "skamya_8",
+            "category": "bench",
+            "sortOrder": 108,
+            "name": "Скамья М8",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_8/01.png",
+                    "alt": "Скамья бетонная модель 8"
+                },
+                {
+                    "src": "images/catalog/skamya_8/02.png",
+                    "alt": "Скамья бетонная модель 8"
+                },
+                {
+                    "src": "images/catalog/skamya_8/03.png",
+                    "alt": "Скамья бетонная модель 8"
+                }
+            ]
+        },
+        {
+            "id": "bench-009",
+            "slug": "skamya_9",
+            "category": "bench",
+            "sortOrder": 109,
+            "name": "Скамья М9",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "скамья",
+                "благоустройство",
+                "уличная мебель",
+                "парк"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/skamya_9/01.png",
+                    "alt": "Скамья бетонная модель 9"
+                },
+                {
+                    "src": "images/catalog/skamya_9/02.png",
+                    "alt": "Скамья бетонная модель 9"
+                },
+                {
+                    "src": "images/catalog/skamya_9/03.png",
+                    "alt": "Скамья бетонная модель 9"
+                }
+            ]
+        },
+        {
+            "id": "trash-001",
+            "slug": "trash_1",
+            "category": "trash",
+            "sortOrder": 301,
+            "name": "Урна М1",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_1/01.png",
+                    "alt": "Урна бетонная модель 1"
+                },
+                {
+                    "src": "images/catalog/trash_1/02.png",
+                    "alt": "Урна бетонная модель 1"
+                },
+                {
+                    "src": "images/catalog/trash_1/03.png",
+                    "alt": "Урна бетонная модель 1"
+                }
+            ]
+        },
+        {
+            "id": "trash-010",
+            "slug": "trash_10",
+            "category": "trash",
+            "sortOrder": 310,
+            "name": "Урна М10",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_10/01.png",
+                    "alt": "Урна бетонная модель 10"
+                },
+                {
+                    "src": "images/catalog/trash_10/02.png",
+                    "alt": "Урна бетонная модель 10"
+                },
+                {
+                    "src": "images/catalog/trash_10/03.png",
+                    "alt": "Урна бетонная модель 10"
+                }
+            ]
+        },
+        {
+            "id": "trash-011",
+            "slug": "trash_11",
+            "category": "trash",
+            "sortOrder": 311,
+            "name": "Урна М11",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_11/01.png",
+                    "alt": "Урна бетонная модель 11"
+                },
+                {
+                    "src": "images/catalog/trash_11/02.png",
+                    "alt": "Урна бетонная модель 11"
+                },
+                {
+                    "src": "images/catalog/trash_11/03.png",
+                    "alt": "Урна бетонная модель 11"
+                }
+            ]
+        },
+        {
+            "id": "trash-012",
+            "slug": "trash_12",
+            "category": "trash",
+            "sortOrder": 312,
+            "name": "Урна М12",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_12/01.png",
+                    "alt": "Урна бетонная модель 12"
+                },
+                {
+                    "src": "images/catalog/trash_12/02.png",
+                    "alt": "Урна бетонная модель 12"
+                },
+                {
+                    "src": "images/catalog/trash_12/03.png",
+                    "alt": "Урна бетонная модель 12"
+                }
+            ]
+        },
+        {
+            "id": "trash-013",
+            "slug": "trash_13",
+            "category": "trash",
+            "sortOrder": 313,
+            "name": "Урна М13",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_13/01.png",
+                    "alt": "Урна бетонная модель 13"
+                },
+                {
+                    "src": "images/catalog/trash_13/02.png",
+                    "alt": "Урна бетонная модель 13"
+                },
+                {
+                    "src": "images/catalog/trash_13/03.png",
+                    "alt": "Урна бетонная модель 13"
+                }
+            ]
+        },
+        {
+            "id": "trash-014",
+            "slug": "trash_14",
+            "category": "trash",
+            "sortOrder": 314,
+            "name": "Урна М14",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_14/01.png",
+                    "alt": "Урна бетонная модель 14"
+                },
+                {
+                    "src": "images/catalog/trash_14/02.png",
+                    "alt": "Урна бетонная модель 14"
+                },
+                {
+                    "src": "images/catalog/trash_14/03.png",
+                    "alt": "Урна бетонная модель 14"
+                }
+            ]
+        },
+        {
+            "id": "trash-015",
+            "slug": "trash_15",
+            "category": "trash",
+            "sortOrder": 315,
+            "name": "Урна М15",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_15/01.png",
+                    "alt": "Урна бетонная модель 15"
+                },
+                {
+                    "src": "images/catalog/trash_15/02.png",
+                    "alt": "Урна бетонная модель 15"
+                },
+                {
+                    "src": "images/catalog/trash_15/03.png",
+                    "alt": "Урна бетонная модель 15"
+                }
+            ]
+        },
+        {
+            "id": "trash-016",
+            "slug": "trash_16",
+            "category": "trash",
+            "sortOrder": 316,
+            "name": "Урна М16",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_16/01.png",
+                    "alt": "Урна бетонная модель 16"
+                },
+                {
+                    "src": "images/catalog/trash_16/02.png",
+                    "alt": "Урна бетонная модель 16"
+                },
+                {
+                    "src": "images/catalog/trash_16/03.png",
+                    "alt": "Урна бетонная модель 16"
+                }
+            ]
+        },
+        {
+            "id": "trash-002",
+            "slug": "trash_2",
+            "category": "trash",
+            "sortOrder": 302,
+            "name": "Урна М2",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_2/01.png",
+                    "alt": "Урна бетонная модель 2"
+                },
+                {
+                    "src": "images/catalog/trash_2/02.png",
+                    "alt": "Урна бетонная модель 2"
+                },
+                {
+                    "src": "images/catalog/trash_2/03.png",
+                    "alt": "Урна бетонная модель 2"
+                }
+            ]
+        },
+        {
+            "id": "trash-003",
+            "slug": "trash_3",
+            "category": "trash",
+            "sortOrder": 303,
+            "name": "Урна М3",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_3/01.png",
+                    "alt": "Урна бетонная модель 3"
+                },
+                {
+                    "src": "images/catalog/trash_3/02.png",
+                    "alt": "Урна бетонная модель 3"
+                },
+                {
+                    "src": "images/catalog/trash_3/03.png",
+                    "alt": "Урна бетонная модель 3"
+                }
+            ]
+        },
+        {
+            "id": "trash-004",
+            "slug": "trash_4",
+            "category": "trash",
+            "sortOrder": 304,
+            "name": "Урна М4",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_4/01.png",
+                    "alt": "Урна бетонная модель 4"
+                },
+                {
+                    "src": "images/catalog/trash_4/02.png",
+                    "alt": "Урна бетонная модель 4"
+                },
+                {
+                    "src": "images/catalog/trash_4/03.png",
+                    "alt": "Урна бетонная модель 4"
+                }
+            ]
+        },
+        {
+            "id": "trash-005",
+            "slug": "trash_5",
+            "category": "trash",
+            "sortOrder": 305,
+            "name": "Урна М5",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_5/01.png",
+                    "alt": "Урна бетонная модель 5"
+                },
+                {
+                    "src": "images/catalog/trash_5/02.png",
+                    "alt": "Урна бетонная модель 5"
+                },
+                {
+                    "src": "images/catalog/trash_5/03.png",
+                    "alt": "Урна бетонная модель 5"
+                }
+            ]
+        },
+        {
+            "id": "trash-006",
+            "slug": "trash_6",
+            "category": "trash",
+            "sortOrder": 306,
+            "name": "Урна М6",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_6/01.png",
+                    "alt": "Урна бетонная модель 6"
+                },
+                {
+                    "src": "images/catalog/trash_6/02.png",
+                    "alt": "Урна бетонная модель 6"
+                },
+                {
+                    "src": "images/catalog/trash_6/03.png",
+                    "alt": "Урна бетонная модель 6"
+                }
+            ]
+        },
+        {
+            "id": "trash-007",
+            "slug": "trash_7",
+            "category": "trash",
+            "sortOrder": 307,
+            "name": "Урна М7",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_7/01.png",
+                    "alt": "Урна бетонная модель 7"
+                },
+                {
+                    "src": "images/catalog/trash_7/02.png",
+                    "alt": "Урна бетонная модель 7"
+                },
+                {
+                    "src": "images/catalog/trash_7/03.png",
+                    "alt": "Урна бетонная модель 7"
+                }
+            ]
+        },
+        {
+            "id": "trash-008",
+            "slug": "trash_8",
+            "category": "trash",
+            "sortOrder": 308,
+            "name": "Урна М8",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_8/01.png",
+                    "alt": "Урна бетонная модель 8"
+                },
+                {
+                    "src": "images/catalog/trash_8/02.png",
+                    "alt": "Урна бетонная модель 8"
+                },
+                {
+                    "src": "images/catalog/trash_8/03.png",
+                    "alt": "Урна бетонная модель 8"
+                }
+            ]
+        },
+        {
+            "id": "trash-009",
+            "slug": "trash_9",
+            "category": "trash",
+            "sortOrder": 309,
+            "name": "Урна М9",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "урна",
+                "благоустройство",
+                "общественное пространство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/trash_9/01.png",
+                    "alt": "Урна бетонная модель 9"
+                },
+                {
+                    "src": "images/catalog/trash_9/02.png",
+                    "alt": "Урна бетонная модель 9"
+                },
+                {
+                    "src": "images/catalog/trash_9/03.png",
+                    "alt": "Урна бетонная модель 9"
+                }
+            ]
+        },
+        {
+            "id": "vases-001",
+            "slug": "vases_1",
+            "category": "vases",
+            "sortOrder": 501,
+            "name": "Вазон М1",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "вазон",
+                "кашпо",
+                "благоустройство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/vases_1/01.png",
+                    "alt": "Вазон бетонный модель 1"
+                },
+                {
+                    "src": "images/catalog/vases_1/02.png",
+                    "alt": "Вазон бетонный модель 1"
+                },
+                {
+                    "src": "images/catalog/vases_1/03.png",
+                    "alt": "Вазон бетонный модель 1"
+                }
+            ]
+        },
+        {
+            "id": "vases-002",
+            "slug": "vases_2",
+            "category": "vases",
+            "sortOrder": 502,
+            "name": "Вазон М2",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "вазон",
+                "кашпо",
+                "благоустройство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/vases_2/01.png",
+                    "alt": "Вазон бетонный модель 2"
+                },
+                {
+                    "src": "images/catalog/vases_2/02.png",
+                    "alt": "Вазон бетонный модель 2"
+                },
+                {
+                    "src": "images/catalog/vases_2/03.png",
+                    "alt": "Вазон бетонный модель 2"
+                }
+            ]
+        },
+        {
+            "id": "vases-003",
+            "slug": "vases_3",
+            "category": "vases",
+            "sortOrder": 503,
+            "name": "Вазон М3",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "вазон",
+                "кашпо",
+                "благоустройство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/vases_3/01.png",
+                    "alt": "Вазон бетонный модель 3"
+                },
+                {
+                    "src": "images/catalog/vases_3/02.png",
+                    "alt": "Вазон бетонный модель 3"
+                },
+                {
+                    "src": "images/catalog/vases_3/03.png",
+                    "alt": "Вазон бетонный модель 3"
+                }
+            ]
+        },
+        {
+            "id": "vases-004",
+            "slug": "vases_4",
+            "category": "vases",
+            "sortOrder": 504,
+            "name": "Вазон М4",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "вазон",
+                "кашпо",
+                "благоустройство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/vases_4/01.png",
+                    "alt": "Вазон бетонный модель 4"
+                },
+                {
+                    "src": "images/catalog/vases_4/02.png",
+                    "alt": "Вазон бетонный модель 4"
+                },
+                {
+                    "src": "images/catalog/vases_4/03.png",
+                    "alt": "Вазон бетонный модель 4"
+                }
+            ]
+        },
+        {
+            "id": "vases-005",
+            "slug": "vases_5",
+            "category": "vases",
+            "sortOrder": 505,
+            "name": "Вазон М5",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "вазон",
+                "кашпо",
+                "благоустройство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/vases_5/01.png",
+                    "alt": "Вазон бетонный модель 5"
+                },
+                {
+                    "src": "images/catalog/vases_5/02.png",
+                    "alt": "Вазон бетонный модель 5"
+                },
+                {
+                    "src": "images/catalog/vases_5/03.png",
+                    "alt": "Вазон бетонный модель 5"
+                }
+            ]
+        },
+        {
+            "id": "vases-006",
+            "slug": "vases_6",
+            "category": "vases",
+            "sortOrder": 506,
+            "name": "Вазон М6",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "вазон",
+                "кашпо",
+                "благоустройство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/vases_6/01.png",
+                    "alt": "Вазон бетонный модель 6"
+                },
+                {
+                    "src": "images/catalog/vases_6/02.png",
+                    "alt": "Вазон бетонный модель 6"
+                },
+                {
+                    "src": "images/catalog/vases_6/03.png",
+                    "alt": "Вазон бетонный модель 6"
+                }
+            ]
+        },
+        {
+            "id": "vases-007",
+            "slug": "vases_7",
+            "category": "vases",
+            "sortOrder": 507,
+            "name": "Вазон М7",
+            "dimensions": "Размеры уточняйте",
+            "keywords": [
+                "вазон",
+                "кашпо",
+                "благоустройство",
+                "уличная мебель"
+            ],
+            "available": true,
+            "images": [
+                {
+                    "src": "images/catalog/vases_7/01.png",
+                    "alt": "Вазон бетонный модель 7"
+                },
+                {
+                    "src": "images/catalog/vases_7/02.png",
+                    "alt": "Вазон бетонный модель 7"
+                },
+                {
+                    "src": "images/catalog/vases_7/03.png",
+                    "alt": "Вазон бетонный модель 7"
+                }
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "slug": "bench",
+            "name": "Скамьи"
+        },
+        {
+            "slug": "trash",
+            "name": "Урны"
+        },
+        {
+            "slug": "vases",
+            "name": "Кашпо | Вазоны"
+        },
+        {
+            "slug": "lights",
+            "name": "Уличные светильники"
+        },
+        {
+            "slug": "campfire_areas",
+            "name": "Зоны кострища"
+        },
+        {
+            "slug": "cabins",
+            "name": "Кабинки для переодевания"
+        },
+        {
+            "slug": "chairs",
+            "name": "Шезлонги"
+        }
+    ]
 }

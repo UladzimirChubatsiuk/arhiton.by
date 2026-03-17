@@ -1,200 +1,200 @@
 ﻿<?php
-$pageTitle = 'Наши работы &mdash; Ваша идея - наше воплощение!';
-$pageDescription = 'Архитон - производство малых архитектурных форм в Беларуси. Скамейки, урны, вазоны, велопарковки и ограждения. Индивидуальный подход, сертифицированные материалы.';
-$pageKeywords = 'малые архитектурные формы, благоустройство территории, уличная мебель, урны, скамейки, вазоны, велопарковки, ограждения, производство МАФ, Беларусь';
-$pageCanonical = 'https://arhiton.by';
-$currentPage = 'portfolio.php';
-$extraHead = <<<'HTML'
+require_once __DIR__ . '/includes/seo.php';
 
-HTML;
-$extraScripts = <<<'HTML'
+$pageCanonicalPath = '/projects';
+$extraScripts = '<script src="' . arhiton_asset_path('/js/services.js') . '"></script>' . "\n"
+    . '<script src="' . arhiton_asset_path('/js/catalog.js') . '"></script>' . "\n"
+    . <<<'HTML'
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (typeof window.openCatalogGalleryImages !== 'function') {
+    return;
+  }
 
+  document.querySelectorAll('.js-portfolio-gallery').forEach(function (trigger) {
+    trigger.addEventListener('click', function () {
+      var src = trigger.getAttribute('data-image-src');
+      if (!src) {
+        return;
+      }
+
+      window.openCatalogGalleryImages([
+        {
+          src: src,
+          alt: trigger.getAttribute('data-image-alt') || trigger.getAttribute('data-gallery-title') || 'Проект'
+        }
+      ], trigger.getAttribute('data-gallery-title') || 'Проект', 0);
+    });
+  });
+});
+</script>
 HTML;
 include __DIR__ . '/includes/header.php';
 ?>
 <div class="gtco-section">
 			<div class="gtco-container">
-				<div class="row gtco-heading">
-					<div class="col-md-7 text-left">
-						<h2>Наши работы</h2>
-						<p>Мы гордимся нашими проектами и предлагаем вам ознакомиться с примерами успешной реализации малых архитектурных форм. Каждая работа отражает наш профессионализм, внимание к деталям и индивидуальный подход к клиентам.</p>
+				<div class="row portfolio-hero">
+					<div class="col-md-8">
+						<div class="portfolio-hero__content">
+							<span class="portfolio-hero__eyebrow">Наши проекты</span>
+							<h1 class="portfolio-hero__title">Наши работы в городской и общественной среде</h1>
+							<p class="portfolio-hero__lead">Мы создаём малые архитектурные формы для парков, дворов, общественных территорий и инфраструктурных объектов. Каждый проект показывает, как практичность, надёжность и аккуратный дизайн работают вместе.</p>
+							<div class="portfolio-hero__points">
+								<div class="portfolio-hero__point">Индивидуальная адаптация под объект</div>
+								<div class="portfolio-hero__point">Качественные материалы и долговечные конструкции</div>
+								<div class="portfolio-hero__point">Изготовление решений для реальной городской эксплуатации</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-3 col-md-push-2 text-center">
-						<p class="mt-md">
-						<button class="btn btn-special btn-block" id="btn-special">Заказать</a></button>
-					</p>
+					<div class="col-md-4">
+						<aside class="portfolio-hero__panel">
+							<div class="portfolio-hero__panel-label">В работе</div>
+							<h2 class="portfolio-hero__panel-title">Проекты под задачи заказчика</h2>
+							<p class="portfolio-hero__panel-text">Подбираем конструкцию, материалы и визуальный характер изделия под архитектуру пространства, нагрузку и бюджет проекта.</p>
+							<div class="portfolio-hero__stats">
+								<div class="portfolio-hero__stat">
+									<span class="portfolio-hero__stat-value">МАФ</span>
+									<span class="portfolio-hero__stat-text">для благоустройства и общественных зон</span>
+								</div>
+								<div class="portfolio-hero__stat">
+									<span class="portfolio-hero__stat-value">Под ключ</span>
+									<span class="portfolio-hero__stat-text">от идеи до готового изделия</span>
+								</div>
+							</div>
+							<button class="btn btn-special btn-block portfolio-hero__button" id="btn-special">Заказать</button>
+						</aside>
 					</div>
 				</div>
 				
-				<div id="popupForm" class="popup-overlay" style="display: none;">
-					<div class="popup-content">
-						<span class="close-btn" id="closePopup">&times;</span>
-						<div id="formContent">
-							<h2>Оформление заявки</h2>
-							<p>Заполните форму, и мы свяжемся с вами для уточнения деталей.</p>
-							<form id="orderForm">
-								<!-- Имя -->
-								<div class="form-group">
-									<label for="name">Ваше имя:</label>
-									<input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-								</div>
-								<!-- Номер телефона -->
-								<div class="form-group">
-									<label for="phone">Ваш телефон:</label>
-									<input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
-								</div>
-								<!-- Выбор ассортимента -->
-								<div class="form-group">
-									<label for="product">Выберите ассортимент:</label>
-									<select id="product" name="product" required>
-										<option value="" disabled selected>Выберите из списка</option>
-										<option value="product1">Диваны и скамьи</option>
-										<option value="product2">Урны</option>
-										<option value="product3">Вазоны</option>
-										<option value="product4">Садово-парковая мебель</option>
-										<option value="product5">Велопарковки</option>
-										<option value="product6">Уличные и дорожные ограждения</option>
-									</select>
-								</div>
-								<!-- Кнопка отправки -->
-								<button type="submit" class="btn btn-special">Отправить заявку</button>
-							</form>
-						</div>
-						<div id="successMessage" style="display: none;">
-							<h2>Заявка успешно отправлена!</h2>
-							<p>Спасибо за ваш запрос. Мы свяжемся с вами в ближайшее время.</p>
-							<button id="closeMessage" class="btn btn-special">Закрыть</button>
-						</div>
-					</div>
-				</div>
+				<?php include __DIR__ . '/includes/order-popup.php'; ?>
 				
 				<div class="row">
 
 					<div class="col-md-12">
-						<div class="owl-carousel owl-carousel-carousel">
-							<div class="item">
-								<div class="gtco-item">
-									<a><img src="images/trash_2.png" alt="Урна" class="img-responsive"></a>
-									<h2><a>Урна</h2></a>
-									<!-- <p class="role">New York</p> -->
+						<section class="portfolio-showcase" aria-labelledby="portfolio-showcase-title">
+							<div class="portfolio-showcase__intro">
+								<div class="portfolio-showcase__copy">
+									<span class="portfolio-showcase__eyebrow">Реализованные решения</span>
+									<h2 id="portfolio-showcase-title" class="portfolio-showcase__title">Подборка проектов для городских и общественных пространств</h2>
+									<p class="portfolio-showcase__lead">В этой секции собраны изделия, которые показывают наш подход к благоустройству: надёжные материалы, чистая геометрия, практичная эксплуатация и аккуратная интеграция в архитектурную среду.</p>
 								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a><img src="images/trash_1.jpg" alt="Урна деревянная с ж/б основанием" class="img-responsive"></a>
-									<h2><a>Урна деревянная с ж/б основанием</h2></a>
-									<!-- <p class="role">London</p> -->
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a><img src="images/bench_2.jpg" alt="Скамья" class="img-responsive"></a>
-									<h2><a>Скамья</h2></a>
-									<!-- <p class="role">Paris, France</p> -->
+								<div class="portfolio-showcase__facts">
+									<div class="portfolio-showcase__fact">
+										<span class="portfolio-showcase__fact-value">МАФ</span>
+										<p>Производим изделия для парков, дворов, общественных зон и транспортной инфраструктуры.</p>
+									</div>
+									<div class="portfolio-showcase__fact">
+										<span class="portfolio-showcase__fact-value">Под заказ</span>
+										<p>Адаптируем материалы, размеры и конструктив под задачи конкретного объекта.</p>
+									</div>
 								</div>
 							</div>
 
-							<div class="item">
-								<div class="gtco-item">
-									<a><img src="images/bench_1.jpg" alt="Скамья" class="img-responsive"></a>
-									<h2><a>Скамья</h2></a>
-									<!-- <p class="role">New York</p> -->
-								</div>
+							<div class="portfolio-showcase__grid">
+								<article class="portfolio-showcase__card portfolio-showcase__card--wide">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_0.jpg" data-image-alt="Скамья-тонель для благоустройства общественного пространства" data-gallery-title="Скамья-тонель">
+										<img src="images/portfolio/portfolio_0.jpg" alt="Скамья-тонель для благоустройства общественного пространства" class="img-responsive">
+										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
+									</button>
+									<div class="portfolio-showcase__body">
+										<div class="portfolio-showcase__meta">г. Мосты</div>
+										<h3>Скамья-тонель</h3>
+										<p>Один из самых выразительных реализованных проектов компании. Скамья-тонель была изготовлена и поставлена для благоустройства территории, где требовалось совместить удобную зону отдыха, визуальный акцент и устойчивость к интенсивной эксплуатации. По этому объекту заказчик подтвердил качество изготовления, соблюдение сроков поставки и добросовестное выполнение работ.</p>
+									</div>
+								</article>
+
+								<article class="portfolio-showcase__card">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_1.png" data-image-alt="Скамейки для благоустройства сквера по улице Гейсика в Несвиже" data-gallery-title="Скамейки для благоустройства сквера">
+										<img src="images/portfolio/portfolio_1.png" alt="Скамейки для благоустройства сквера по улице Гейсика в Несвиже" class="img-responsive">
+										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
+									</button>
+									<div class="portfolio-showcase__body">
+										<div class="portfolio-showcase__meta">г. Несвиж</div>
+										<h3>Скамейки для благоустройства сквера</h3>
+										<p>Изготовление скамеек для благоустройства сквера по улице Гейсика в городе Несвиже. Проект был ориентирован на создание удобной и визуально аккуратной зоны отдыха, где изделия должны были сочетать надежную конструкцию, комфорт для посетителей и гармоничное встраивание в общественное пространство.</p>
+									</div>
+								</article>
+
+								<article class="portfolio-showcase__card">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_6.png" data-image-alt="Скамейки для благоустройства города Орша" data-gallery-title="Скамейки для благоустройства города Орша">
+										<img src="images/portfolio/portfolio_6.png" alt="Скамейки для благоустройства города Орша" class="img-responsive">
+										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
+									</button>
+									<div class="portfolio-showcase__body">
+										<div class="portfolio-showcase__meta">г. Орша</div>
+										<h3>Скамейки для благоустройства города</h3>
+										<p>Изготовление скамеек для благоустройства города Орша в рамках обновления общественных территорий. Для проекта были подобраны решения, сочетающие удобство для ежедневного использования, устойчивость к уличной нагрузке и лаконичный внешний вид, чтобы изделия органично вписывались в городскую среду и сохраняли аккуратный вид в эксплуатации.</p>
+									</div>
+								</article>
+
+								<article class="portfolio-showcase__card">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_2.jpg" data-image-alt="Скамейки и урны для благоустройства Музея Славы Могилевской области" data-gallery-title="Благоустройство Музея Славы Могилевской области">
+										<img src="images/portfolio/portfolio_2.jpg" alt="Скамейки и урны для благоустройства Музея Славы Могилевской области" class="img-responsive">
+										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
+									</button>
+									<div class="portfolio-showcase__body">
+										<div class="portfolio-showcase__meta">Могилевская область</div>
+										<h3>Благоустройство Музея Славы</h3>
+										<p>Изготовление урн и скамеек для благоустройства Музея Славы Могилевской области. Для объекта был выполнен комплект изделий, который объединил удобные места отдыха, аккуратную организацию пространства и устойчивые к ежедневной эксплуатации элементы благоустройства, соответствующие статусу общественно значимой локации.</p>
+									</div>
+								</article>
+
+								<article class="portfolio-showcase__card">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_3.png" data-image-alt="Урна для общественных пространств на станциях Минского метрополитена" data-gallery-title="Поставка урн для Минского метрополитена">
+										<img src="images/portfolio/portfolio_3.png" alt="Урна для общественных пространств на станциях Минского метрополитена" class="img-responsive">
+										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
+									</button>
+									<div class="portfolio-showcase__body">
+										<div class="portfolio-showcase__meta">г. Минск</div>
+										<h3>Поставка урн для станций Минского метрополитена</h3>
+										<p>Поставка бетонных урн для объектов Минского метрополитена. Эти изделия установлены на станциях «Аэродромная», «Неморшанский сад» и «Слуцкий гостинец» в Минске, где важны устойчивость к высокой нагрузке, аккуратный внешний вид и надежность в ежедневной эксплуатации.</p>
+									</div>
+								</article>
+
+								<article class="portfolio-showcase__card">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_4.png" data-image-alt="Изделия для благоустройства пляжей Воложинского района" data-gallery-title="Благоустройство пляжей Воложинского района">
+										<img src="images/portfolio/portfolio_4.png" alt="Изделия для благоустройства пляжей Воложинского района" class="img-responsive">
+										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
+									</button>
+									<div class="portfolio-showcase__body">
+										<div class="portfolio-showcase__meta">Воложинский район</div>
+										<h3>Благоустройство пляжей</h3>
+										<p>Изготовление изделий для благоустройства пляжей Воложинского района с учётом сезонной нагрузки, открытой среды и требований к долговечности. В проекте был сделан акцент на практичные материалы, устойчивые конструкции и аккуратный внешний вид, чтобы элементы благоустройства сохраняли эксплуатационные качества в течение длительного срока.</p>
+									</div>
+								</article>
+
+								<article class="portfolio-showcase__card">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_5.png" data-image-alt="Изделия для благоустройства поселка Стрешин" data-gallery-title="Благоустройство поселка Стрешин">
+										<img src="images/portfolio/portfolio_5.png" alt="Изделия для благоустройства поселка Стрешин" class="img-responsive">
+										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
+									</button>
+									<div class="portfolio-showcase__body">
+										<div class="portfolio-showcase__meta">п. Стрешин</div>
+										<h3>Благоустройство поселка Стрешин</h3>
+										<p>Реализованное решение по благоустройству поселка Стрешин с поставкой изделий для общественного пространства. В проекте был сделан акцент на долговечные материалы, удобство для жителей и аккуратную интеграцию элементов в существующую среду, чтобы территория выглядела целостно и оставалась удобной в ежедневной эксплуатации.</p>
+									</div>
+								</article>
 							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a><img src="images/bench_tonel.png" alt="Скамья-тонель" class="img-responsive"></a>
-									<h2><a>Скамья-тонель</h2></a>
-									<!-- <p class="role">New York</p> -->
-								</div>
-							</div>
-						</div>
+						</section>
 					</div>
 					
 				</div>
 			</div>
 		</div>
+
+		<div id="catalogGalleryModal" class="catalog-gallery-modal" aria-hidden="true">
+			<div class="catalog-gallery-dialog" role="dialog" aria-modal="true" aria-label="Галерея проекта">
+				<button type="button" class="catalog-gallery-close" id="catalogGalleryClose" aria-label="Закрыть">&times;</button>
+				<div class="catalog-gallery-main-wrap">
+					<button type="button" class="catalog-gallery-nav prev" id="catalogGalleryPrev" aria-label="Предыдущее фото">&#10094;</button>
+					<img id="catalogGalleryImage" src="" alt="">
+					<button type="button" class="catalog-gallery-nav next" id="catalogGalleryNext" aria-label="Следующее фото">&#10095;</button>
+				</div>
+				<div id="catalogGalleryThumbs" class="catalog-gallery-thumbs"></div>
+			</div>
+		</div>
 		<!-- END Work -->
 
-	<div class="gtco-container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
-				<h2>Отзывы от организаций</h2>
-			</div>
-		</div>
-		<div class="row">
 
-			<div class="col-md-12">
-				<div class="owl-carousel owl-carousel-carousel">
-					<div class="item">
-						<div class="gtco-item">
-							<img src="images/otzyv_1.jpg" alt="Отзывы организаций" class="img-responsive" onclick="openFullscreen(this)">
-						</div>
-					</div>
-					<div class="item">
-						<div class="gtco-item">
-							<img src="images/otzyv_2.jpg" alt="Отзывы организаций" class="img-responsive" onclick="openFullscreen(this)">
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</div>
-
-<script>
-function openFullscreen(img) {
-    const fullscreenImg = document.createElement('img');
-    fullscreenImg.src = img.src;
-    fullscreenImg.style.position = 'fixed';
-    fullscreenImg.style.top = '0';
-    fullscreenImg.style.left = '0';
-    fullscreenImg.style.width = '100%';
-    fullscreenImg.style.height = '100%';
-    fullscreenImg.style.objectFit = 'contain';
-    fullscreenImg.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
-    fullscreenImg.style.zIndex = '1000';
-    fullscreenImg.style.cursor = 'pointer';
-    fullscreenImg.onclick = () => document.body.removeChild(fullscreenImg);
-    document.body.appendChild(fullscreenImg);
-}
-</script>
-
-		<div class="gtco-section gto-features">
-			<div class="gtco-container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-zip icon"></i>
-							<div class="copy">
-								<h3>Эстетика в мелких <br>деталях</h3>
-								<p>Мы разрабатываем малые архитектурные формы, которые подчеркивают стиль пространства.</p>
-								<p><a href="services.php" class="gtco-more">Подробнее</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-hummer icon"></i>
-							<div class="copy">
-								<h3>Индивидуальный подход к каждому проекту</h3>
-								<p>Наша команда помогает воплощать идеи клиентов, тщательно планируя расположение МАФ.</p>
-								<p><a href="services.php" class="gtco-more">Подробнее</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-plug icon"></i>
-							<div class="copy">
-								<h3>Функциональность &amp; Комфорт</h3>
-								<p>Создаём удобные и долговечные решения для парков, зон отдыха и городских мероприятий.</p>
-								<p><a href="services.php" class="gtco-more">Подробнее</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<?php $featuresSectionClass = ' home-page-block'; include __DIR__ . '/includes/features-strip.php'; ?>
 <?php include __DIR__ . '/includes/footer.php'; ?>

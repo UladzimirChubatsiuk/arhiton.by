@@ -1,263 +1,174 @@
 ﻿<?php
-$pageTitle = 'О нас &mdash; Ваша идея - наше воплощение!';
-$pageDescription = 'Архитон - производство малых архитектурных форм в Беларуси. Скамейки, урны, вазоны, велопарковки и ограждения. Индивидуальный подход, сертифицированные материалы.';
-$pageKeywords = 'малые архитектурные формы, благоустройство территории, уличная мебель, урны, скамейки, вазоны, велопарковки, ограждения, производство МАФ, Беларусь';
-$pageCanonical = 'https://arhiton.by';
-$currentPage = 'about.php';
-$extraHead = <<<'HTML'
+require_once __DIR__ . '/includes/seo.php';
 
-HTML;
-$extraScripts = <<<'HTML'
-
-HTML;
+$pageCanonicalPath = '/about-us';
+$extraScripts = '<script src="' . arhiton_asset_path('/js/services.js') . '"></script>' . "\n"
+    . '<script src="' . arhiton_asset_path('/js/catalog.js') . '"></script>';
 include __DIR__ . '/includes/header.php';
 ?>
 <div class="gtco-section">
 			<div class="gtco-container">
-				<div class="row gtco-heading">
-					<div class="col-md-7 text-left">
-						<h2>Наша команда</h2>
-						<p>Мы группа опытных профессионалов, объединённых общей целью создания функциональных и эстетичных малых архитектурных форм. Мы сочетает в себе инженеров, дизайнеров, архитекторов и менеджеров, каждый из которых привносит свои знания и навыки в каждый проект.</p>
-					</div>
-					
-					<div class="col-md-3 col-md-push-2 text-center">
-						<p class="mt-md">
-							<button class="btn btn-special btn-block" id="joinTeamBtn">Вступай в команду</button>
-						</p>
-					</div>
-										
-					<!-- Всплывающее окно -->
-					<div id="popupForm" class="popup-overlay" style="display: none;">
-						<div class="popup-content">
-							<span class="close-btn" id="closePopup">&times;</span>
-							<div id="formContent">
-								<h2>Присоединяйтесь к нашей команде</h2>
-								<p>Заполните форму, и мы свяжемся с вами.</p>
-								<form id="teamForm">
-									<!-- Имя -->
-									<div class="form-group">
-										<label for="name">Имя:</label>
-										<input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-									</div>
-									<!-- Номер телефона -->
-									<div class="form-group">
-										<label for="phone">Номер телефона:</label>
-										<input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
-									</div>
-									<!-- Специализация -->
-									<div class="form-group">
-										<label for="specialization">Специализация:</label>
-										<select id="specialization" name="specialization" required>
-											<option value="" disabled selected>Выберите вашу специализацию</option>
-											<option value="архитектор">Архитектор</option>
-											<option value="дизайнер">Дизайнер</option>
-											<option value="инженер">Инженер</option>
-											<option value="другое">Другое</option>
-										</select>
-									</div>
-									<!-- О себе -->
-									<div class="form-group">
-										<label for="about">О себе:</label>
-										<textarea id="about" name="about" rows="5" placeholder="Расскажите о себе" required></textarea>
-									</div>
-									<!-- Кнопка отправки -->
-									<button type="submit" class="btn btn-special">Отправить</button>
-								</form>
-							</div>
-							<div id="successMessage" style="display: none;">
-								<h2>Заявка успешно отправлена!</h2>
-								<p>Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время.</p>
-								<button id="closeMessage" class="btn btn-special">Закрыть</button>
+				<div class="row about-hero-row">
+					<div class="col-md-8">
+						<div class="about-hero-copy about-hero-card">
+							<span class="about-eyebrow">О компании</span>
+							<h1>Команда, которая создаёт продуманные малые архитектурные формы</h1>
+							<p class="about-hero-lead">Мы объединяем специалистов по проектированию, производству, дизайну и комплектации, чтобы создавать МАФ для городской среды, жилых комплексов, парков и общественных территорий. Для нас важны не только эстетика изделий, но и их практичность, срок службы и точность исполнения.</p>
+							<div class="about-hero-points">
+								<div class="about-hero-point">Инженерный подход к каждому изделию</div>
+								<div class="about-hero-point">Командная работа от идеи до готового результата</div>
+								<div class="about-hero-point">Внимание к архитектуре пространства и реальной эксплуатации</div>
 							</div>
 						</div>
 					</div>
-					
-				
+					<div class="col-md-4">
+						<aside class="about-hero-panel">
+							<div class="about-hero-panel__label">Наш подход</div>
+							<h2 class="about-hero-panel__title">Работаем не шаблонно, а под задачу объекта</h2>
+							<p class="about-hero-panel__text">Подбираем конструктив, материалы и внешний вид изделия с учётом среды, нагрузки и ожиданий заказчика, чтобы решение было не только красивым, но и жизнеспособным.</p>
+							<div class="about-hero-panel__stats">
+								<div class="about-hero-panel__stat">
+									<span class="about-hero-panel__stat-value">Команда</span>
+									<span class="about-hero-panel__stat-text">инженеров, дизайнеров, архитекторов и менеджеров</span>
+								</div>
+								<div class="about-hero-panel__stat">
+									<span class="about-hero-panel__stat-value">Проектно</span>
+									<span class="about-hero-panel__stat-text">подходим к каждой территории и каждому изделию</span>
+								</div>
+							</div>
+							<p class="about-hero-actions">
+								<button class="btn btn-special btn-block" id="btn-special">Заказать</button>
+							</p>
+						</aside>
+					</div>
 				</div>
+				
+				<?php include __DIR__ . '/includes/order-popup.php'; ?>
 				<div class="row">
 					<div class="col-md-12">
-						<h2 style="font-size: 40px; margin-bottom: 10px; line-height: 1.5; color: #4d4d4d; font-weight: 300;">
-							Наши преимущества</h2>
-						<div class="owl-carousel owl-carousel-carousel">
-							<div class="item">
-								<div class="gtco-staff">
-									<img src="images/staff_1.png" alt="" class="img-responsive">
-									<h2>Индивидуальные решения для проектов</h2>
-									<p class="role">МАФ</p>
-									<p>Мы предлагаем уникальные малые архитектурные формы, которые соответствуют вашим потребностям и пространственным особенностям.</p>
-									<ul class="fh5co-social">
-										<li><a><i class="icon-facebook"></i></a></li>
-										<li><a><i class="icon-twitter"></i></a></li>
-										<li><a href="https://www.instagram.com/arhiton.by?igsh=aG1ybXl4anB0ZDA3"><i class="icon-instagram"></i></a></li>
-									</ul>
-								</div>
+						<section class="about-advantages" aria-labelledby="about-advantages-title">
+							<div class="about-advantages__header">
+								<span class="about-advantages__eyebrow">Почему выбирают Архитон</span>
+								<h2 id="about-advantages-title" class="about-advantages__title">Наши преимущества</h2>
+								<p class="about-advantages__lead">Мы проектируем и производим малые архитектурные формы для городских пространств, жилых комплексов, парков и общественных территорий, сохраняя баланс между эстетикой, сроками и эксплуатационной надёжностью.</p>
 							</div>
-							<div class="item">
-								<div class="gtco-staff">
-									<img src="images/staff_2.png" alt="" class="img-responsive">
-									<h2>Долговечность и надёжность материалов</h2>
-									<p class="role">МАФ</p>
-									<p>Все наши изделия изготовлены из высококачественных материалов, устойчивых к внешним воздействиям и времени.</p>
-									<ul class="fh5co-social">
-										<li><a><i class="icon-facebook"></i></a></li>
-										<li><a><i class="icon-twitter"></i></a></li>
-										<li><a href="https://www.instagram.com/arhiton.by?igsh=aG1ybXl4anB0ZDA3"><i class="icon-instagram"></i></a></li>
-									</ul>
+
+							<div class="about-advantages__facts" aria-label="Ключевые преимущества">
+								<div class="about-advantages__fact">
+									<span class="about-advantages__fact-value">Под проект</span>
+									<p>Подбираем решения под архитектуру объекта, трафик, бюджет и условия эксплуатации.</p>
 								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-staff">
-									<img src="images/staff_3.png" alt="" class="img-responsive">
-									<h2>Современный и стильный дизайн</h2>
-									<p class="role">МАФ</p>
-									<p>Мы создаём элегантные элементы, которые идеально вписываются в городской и природный ландшафт, подчеркивая его красоту.</p>
-									<ul class="fh5co-social">
-										<li><a><i class="icon-facebook"></i></a></li>
-										<li><a><i class="icon-twitter"></i></a></li>
-										<li><a href="https://www.instagram.com/arhiton.by?igsh=aG1ybXl4anB0ZDA3"><i class="icon-instagram"></i></a></li>
-									</ul>
+								<div class="about-advantages__fact">
+									<span class="about-advantages__fact-value">Сертифицированно</span>
+									<p>Используем качественные материалы и проверенные производственные процессы.</p>
+								</div>
+								<div class="about-advantages__fact">
+									<span class="about-advantages__fact-value">Под ключ</span>
+									<p>Берём на себя изготовление, поставку и сопровождение на всех этапах проекта.</p>
 								</div>
 							</div>
 
-							<div class="item">
-								<div class="gtco-staff">
-									<img src="images/staff_4.png" alt="" class="img-responsive">
-									<h2>Экологическая ответственность</h2>
-									<p class="role">МАФ</p>
-									<p>Мы применяем только экологически чистые материалы для наших проектов, поддерживая устойчивое развитие и заботясь об окружающей среде.</p>
-									<ul class="fh5co-social">
-										<li><a><i class="icon-facebook"></i></a></li>
-										<li><a><i class="icon-twitter"></i></a></li>
-										<li><a href="https://www.instagram.com/arhiton.by?igsh=aG1ybXl4anB0ZDA3"><i class="icon-instagram"></i></a></li>
-									</ul>
-								</div>
+							<div class="about-advantages__grid">
+								<article class="about-advantages__card">
+									<div class="about-advantages__card-number">01</div>
+									<h3>Индивидуальные решения</h3>
+									<p>Разрабатываем МАФ с учётом конкретной территории, архитектурной среды и функциональных задач заказчика.</p>
+								</article>
+								<article class="about-advantages__card">
+									<div class="about-advantages__card-number">02</div>
+									<h3>Надёжные материалы</h3>
+									<p>Используем материалы, рассчитанные на интенсивную эксплуатацию, сезонные нагрузки и длительный срок службы.</p>
+								</article>
+								<article class="about-advantages__card">
+									<div class="about-advantages__card-number">03</div>
+									<h3>Современный дизайн</h3>
+									<p>Создаём решения, которые усиливают визуальный облик пространства и органично вписываются в городской ландшафт.</p>
+								</article>
+								<article class="about-advantages__card">
+									<div class="about-advantages__card-number">04</div>
+									<h3>Экологичный подход</h3>
+									<p>Отдаём приоритет безопасным и практичным материалам, поддерживая устойчивый подход к благоустройству.</p>
+								</article>
+								<article class="about-advantages__card">
+									<div class="about-advantages__card-number">05</div>
+									<h3>Точные сроки и монтаж</h3>
+									<p>Организуем изготовление и поставку без лишних задержек, чтобы объект вводился в эксплуатацию по плану.</p>
+								</article>
+								<article class="about-advantages__card">
+									<div class="about-advantages__card-number">06</div>
+									<h3>Сильная экспертная команда</h3>
+									<p>В проекте участвуют специалисты по производству, дизайну и комплектации, поэтому решения получаются продуманными и реалистичными.</p>
+								</article>
 							</div>
-							<div class="item">
-								<div class="gtco-staff">
-									<img src="images/staff_5.png" alt="" class="img-responsive">
-									<h2>Быстрая установка и обслуживание</h2>
-									<p class="role">МАФ</p>
-									<p>Наши решения устанавливаются быстро и не требуют сложного ухода, что делает их удобными и привлекательными для эксплуатации.</p>
-									<ul class="fh5co-social">
-										<li><a><i class="icon-facebook"></i></a></li>
-										<li><a><i class="icon-twitter"></i></a></li>
-										<li><a href="https://www.instagram.com/arhiton.by?igsh=aG1ybXl4anB0ZDA3"><i class="icon-instagram"></i></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-staff">
-									<img src="images/staff_6.png" alt="" class="img-responsive">
-									<h2>Конкурентоспособные цены</h2>
-									<p class="role">МАФ</p>
-									<p>У нас множество предложений с доступными и самыми низкиими ценами, обеспечивая высокий стандарт качества при оптимальном бюджете.</p>
-									<ul class="fh5co-social">
-										<li><a><i class="icon-facebook"></i></a></li>
-										<li><a><i class="icon-twitter"></i></a></li>
-										<li><a href="https://www.instagram.com/arhiton.by?igsh=aG1ybXl4anB0ZDA3"><i class="icon-instagram"></i></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-staff">
-									<img src="images/staff_7.png" alt="" class="img-responsive">
-									<h2>Профессионализм и опыт команды</h2>
-									<p class="role">МАФ</p>
-									<p>Наша команда состоит из опытных специалистов, которые знают, как создавать качественные и функциональные архитектурные формы.</p>
-									<ul class="fh5co-social">
-										<li><a><i class="icon-facebook"></i></a></li>
-										<li><a><i class="icon-twitter"></i></a></li>
-										<li><a href="https://www.instagram.com/arhiton.by?igsh=aG1ybXl4anB0ZDA3"><i class="icon-instagram"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
+						</section>
 					</div>
-					
 				</div>
 			</div>
 		</div>
 		<!-- END .gtco-services -->
 
-			<div class="gtco-section">
+<div class="gtco-section org-reviews">
 	<div class="gtco-container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
 				<h2>Отзывы от организаций</h2>
+				<p>Нам доверяют муниципальные и городские организации. Ниже несколько недавних отзывов о качестве поставки и соблюдении сроков.</p>
 			</div>
 		</div>
 		<div class="row">
-
-			<div class="col-md-12">
-				<div class="owl-carousel owl-carousel-carousel">
-					<div class="item">
-						<div class="gtco-item">
-							<img src="images/otzyv_1.jpg" alt="Отзывы организаций" class="img-responsive" onclick="openFullscreen(this)">
-						</div>
-					</div>
-					<div class="item">
-						<div class="gtco-item">
-							<img src="images/otzyv_2.jpg" alt="Отзывы организаций" class="img-responsive" onclick="openFullscreen(this)">
-						</div>
-					</div>
-				</div>
+			<div class="col-md-6 js-review-card">
+				<article class="org-review-card">
+					<div class="org-review-meta">Мостовский районный исполнительный комитет · 27 января 2025</div>
+					<h3 class="org-review-title">Поставка скамьи и тоннеля для благоустройства территории</h3>
+					<p class="org-review-text">Заказчик подтвердил, что поставка малых архитектурных форм была выполнена вовремя, а монтаж и изготовление конструкции прошли качественно и добросовестно.</p>
+					<div class="org-review-result">Результат: работы выполнены в срок, без замечаний по качеству.</div>
+					<button
+						type="button"
+						class="btn btn-special btn-outline org-review-link js-review-original"
+						data-gallery-title="Оригинал отзыва: Мостовский райисполком"
+						data-image-src="images/documents/otzyv_1.jpg"
+						data-image-alt="Оригинал отзыва Мостовского районного исполнительного комитета"
+					>
+						Смотреть оригинал
+					</button>
+				</article>
 			</div>
-
+			<div class="col-md-6 js-review-card">
+				<article class="org-review-card">
+					<div class="org-review-meta">Строительство Минского метрополитена · 20 февраля 2025</div>
+					<h3 class="org-review-title">Изготовление и поставка бетонных урн для участка метро</h3>
+					<p class="org-review-text">Предприятие выразило благодарность за изготовление и поставку бетонных урн для объекта Минского метрополитена. В отзыве отдельно отмечены качество исполнения, полнота работ и соблюдение согласованных сроков.</p>
+					<div class="org-review-result">Результат: рекомендовано как надёжный и ответственный партнёр-поставщик.</div>
+					<button
+						type="button"
+						class="btn btn-special btn-outline org-review-link js-review-original"
+						data-gallery-title="Оригинал отзыва: Строительство Минского метрополитена"
+						data-image-src="images/documents/otzyv_2.jpg"
+						data-image-alt="Оригинал отзыва предприятия по строительству Минского метрополитена"
+					>
+						Смотреть оригинал
+					</button>
+				</article>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<button type="button" id="reviewShowMore" class="btn btn-special org-reviews-more" hidden>Показать еще</button>
+			</div>
 		</div>
 	</div>
 </div>
 
-<script>
-function openFullscreen(img) {
-    const fullscreenImg = document.createElement('img');
-    fullscreenImg.src = img.src;
-    fullscreenImg.style.position = 'fixed';
-    fullscreenImg.style.top = '0';
-    fullscreenImg.style.left = '0';
-    fullscreenImg.style.width = '100%';
-    fullscreenImg.style.height = '100%';
-    fullscreenImg.style.objectFit = 'contain';
-    fullscreenImg.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
-    fullscreenImg.style.zIndex = '1000';
-    fullscreenImg.style.cursor = 'pointer';
-    fullscreenImg.onclick = () => document.body.removeChild(fullscreenImg);
-    document.body.appendChild(fullscreenImg);
-}
-</script>
-		<div class="gtco-section gto-features">
-			<div class="gtco-container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-zip icon"></i>
-							<div class="copy">
-								<h3>Эстетика в мелких <br>деталях</h3>
-								<p>Мы разрабатываем малые архитектурные формы, которые подчеркивают стиль пространства.</p>
-								<p><a href="services.php" class="gtco-more">Подробнее</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-hummer icon"></i>
-							<div class="copy">
-								<h3>Индивидуальный подход к каждому проекту</h3>
-								<p>Наша команда помогает воплощать идеи клиентов, тщательно планируя расположение МАФ.</p>
-								<p><a href="services.php" class="gtco-more">Подробнее</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-plug icon"></i>
-							<div class="copy">
-								<h3>Функциональность &amp; Комфорт</h3>
-								<p>Создаём удобные и долговечные решения для парков, зон отдыха и городских мероприятий.</p>
-								<p><a href="services.php" class="gtco-more">Подробнее</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+<div id="catalogGalleryModal" class="catalog-gallery-modal" aria-hidden="true">
+	<div class="catalog-gallery-dialog" role="dialog" aria-modal="true" aria-label="Галерея">
+		<button type="button" class="catalog-gallery-close" id="catalogGalleryClose" aria-label="Закрыть">&times;</button>
+		<div class="catalog-gallery-main-wrap">
+			<button type="button" class="catalog-gallery-nav prev" id="catalogGalleryPrev" aria-label="Предыдущее фото">&#10094;</button>
+			<img id="catalogGalleryImage" src="" alt="">
+			<button type="button" class="catalog-gallery-nav next" id="catalogGalleryNext" aria-label="Следующее фото">&#10095;</button>
 		</div>
+		<div id="catalogGalleryThumbs" class="catalog-gallery-thumbs"></div>
+	</div>
+</div>
+<?php $featuresSectionClass = ' home-page-block'; include __DIR__ . '/includes/features-strip.php'; ?>
 <?php include __DIR__ . '/includes/footer.php'; ?>
