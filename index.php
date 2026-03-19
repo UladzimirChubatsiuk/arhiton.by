@@ -8,7 +8,7 @@ include __DIR__ . '/includes/header.php';
 					<div class="owl-carousel owl-carousel-fullwidth">
 						<div class="item">
 							<div class="home-hero-slide">
-								<img src="images/banner/hero_5.png" alt="Скамья-тонель для благоустройства общественных пространств">
+								<img src="<?= htmlspecialchars(arhiton_asset_path('/images/banner/hero_5.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Скамья-тонель для благоустройства общественных пространств" fetchpriority="high" decoding="async">
 								<div class="slider-copy home-hero-slide__content">
 									<span class="home-hero-slide__eyebrow">Производство МАФ в Беларуси</span>
 									<h1>Малые архитектурные формы для парков и общественных пространств</h1>
@@ -25,145 +25,12 @@ include __DIR__ . '/includes/header.php';
 								</div>
 							</div>
 						</div>
-						<div class="item">
-							<div class="home-hero-slide">
-								<img src="images/banner/hero_4.png" alt="Парковое освещение и элементы благоустройства">
-								<div class="slider-copy home-hero-slide__content">
-									<span class="home-hero-slide__eyebrow">Категория продукции</span>
-									<h2>Парковое освещение и благоустройство</h2>
-									<p>Подбираем уличные светильники и элементы благоустройства для парков, скверов, дворовых территорий и прогулочных маршрутов с учётом архитектуры пространства.</p>
-									<div class="home-hero-slide__actions">
-										<a class="btn btn-special" href="/catalog?category=lights">Смотреть светильники</a>
-										<a class="btn btn-special btn-outline" href="/contacts">Обсудить проект</a>
-									</div>
-									<div class="home-hero-slide__facts">
-										<span>Для парков и ЖК</span>
-										<span>Практичные решения</span>
-										<span>Аккуратный дизайн</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="home-hero-slide">
-								<img src="images/banner/hero_3.png" alt="Скамьи и кашпо для благоустройства жилых комплексов">
-								<div class="slider-copy home-hero-slide__content">
-									<span class="home-hero-slide__eyebrow">Комплексное благоустройство</span>
-									<h2>Скамьи и кашпо для жилых комплексов</h2>
-									<p>Создаем решения для дворов, входных групп и общественных зон, где важно совместить удобство жителей, долговечность изделий и цельный визуальный стиль территории.</p>
-									<div class="home-hero-slide__actions">
-										<a class="btn btn-special" href="/catalog?category=vases">Смотреть изделия</a>
-										<a class="btn btn-special btn-outline" href="/projects">Реализованные проекты</a>
-									</div>
-									<div class="home-hero-slide__facts">
-										<span>Для современных ЖК</span>
-										<span>Единый визуальный язык</span>
-										<span>Устойчивость к нагрузке</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="home-hero-slide">
-								<img src="images/banner/hero_1.png" alt="Бетонные скамьи и зоны отдыха для городских пространств">
-								<div class="slider-copy home-hero-slide__content">
-									<span class="home-hero-slide__eyebrow">Городская среда</span>
-									<h2>Бетонные скамьи для городских пространств</h2>
-									<p>Изготавливаем прочные скамьи для улиц, дворов, скверов и общественных площадок, рассчитанные на интенсивную эксплуатацию и долгий срок службы.</p>
-									<div class="home-hero-slide__actions">
-										<a class="btn btn-special" href="/catalog?category=bench">Смотреть скамьи</a>
-										<a class="btn btn-special btn-outline" href="/contacts">Запросить расчет</a>
-									</div>
-									<div class="home-hero-slide__facts">
-										<span>Бетон и металл</span>
-										<span>Для улицы и парков</span>
-										<span>Под интенсивную нагрузку</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="home-hero-slide">
-								<img src="images/banner/hero_6.png" alt="Урны и скамьи для благоустройства общественных объектов">
-								<div class="slider-copy home-hero-slide__content">
-									<span class="home-hero-slide__eyebrow">Общественные объекты</span>
-									<h2>Урны и скамьи для общественных объектов</h2>
-									<p>Поставляем изделия для транспортной инфраструктуры, общественных территорий и объектов с высокой ежедневной нагрузкой, где важны практичность и аккуратный внешний вид.</p>
-									<div class="home-hero-slide__actions">
-										<a class="btn btn-special" href="/catalog?category=trash">Смотреть урны</a>
-										<a class="btn btn-special btn-outline" href="/projects">Смотреть кейсы</a>
-									</div>
-									<div class="home-hero-slide__facts">
-										<span>Для общественных зон</span>
-										<span>Надежные материалы</span>
-										<span>Поставка под объект</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="home-hero-slide">
-								<img src="images/banner/hero_7.png" alt="Скамейки для набережных, парков и прогулочных зон">
-								<div class="slider-copy home-hero-slide__content">
-									<span class="home-hero-slide__eyebrow">Зоны отдыха</span>
-									<h2>Скамейки для набережных и парков</h2>
-									<p>Проектируем и изготавливаем решения для прогулочных маршрутов, набережных и рекреационных пространств, где особенно важны комфорт и устойчивость к уличной среде.</p>
-									<div class="home-hero-slide__actions">
-										<a class="btn btn-special" href="/catalog?category=bench">Выбрать модель</a>
-										<a class="btn btn-special btn-outline" href="/contacts">Оставить заявку</a>
-									</div>
-									<div class="home-hero-slide__facts">
-										<span>Парки и набережные</span>
-										<span>Удобство для посетителей</span>
-										<span>Долговечная эксплуатация</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="home-hero-slide">
-								<img src="images/banner/hero_8.png" alt="Собственное производство бетонных малых архитектурных форм">
-								<div class="slider-copy home-hero-slide__content">
-									<span class="home-hero-slide__eyebrow">Собственное производство</span>
-									<h2>Собственное производство бетонных изделий</h2>
-									<p>Контролируем изготовление на всех этапах и подбираем конструкции под задачи конкретного объекта, чтобы обеспечить качество, сроки и стабильный результат.</p>
-									<div class="home-hero-slide__actions">
-										<a class="btn btn-special" href="/projects">Наши работы</a>
-										<a class="btn btn-special btn-outline" href="/contacts">Связаться с нами</a>
-									</div>
-									<div class="home-hero-slide__facts">
-										<span>Контроль качества</span>
-										<span>Сроки под проект</span>
-										<span>Производство в Беларуси</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="home-hero-slide">
-								<img src="images/banner/hero_2.png" alt="Парковые скамьи для благоустройства зон отдыха">
-								<div class="slider-copy home-hero-slide__content">
-									<span class="home-hero-slide__eyebrow">Популярная категория</span>
-									<h2>Парковые скамьи для зон отдыха</h2>
-									<p>Подбираем модели для дворов, парков и прогулочных зон, где важны удобная посадка, долговечные материалы и аккуратное встраивание в среду.</p>
-									<div class="home-hero-slide__actions">
-										<a class="btn btn-special" href="/catalog?category=bench">Каталог скамеек</a>
-										<a class="btn btn-special btn-outline" href="/contacts">Получить консультацию</a>
-									</div>
-									<div class="home-hero-slide__facts">
-										<span>Для дворов и скверов</span>
-										<span>Типовые и нестандартные</span>
-										<span>Под благоустройство</span>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-<section id="home-intro" class="gtco-container home-page-block home-intro-section">
+		<section id="home-intro" class="gtco-container home-page-block home-intro-section">
 			<div class="home-intro-card">
 				<div class="home-intro-copy">
 					<span class="home-intro-eyebrow">Производство МАФ в Беларуси</span>
@@ -175,15 +42,15 @@ include __DIR__ . '/includes/header.php';
 					</div>
 				</div>
 			</div>
-</section>
+		</section>
 
-			<div class="gtco-container home-page-block home-categories-section ">
+		<div class="gtco-container home-page-block home-categories-section ">
 			<h2 class="home-block-title">Малые архитектурные формы от производителя</h2>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="home-categories-shell">
 						<div class="home-categories-grid" aria-label="Группы товаров и услуг">
-							<a class="home-category-card" href="/catalog?category=bench" style="background-image:url('images/categories/categories_1.png');">
+							<a class="home-category-card" href="/catalog?category=bench"><img class="home-category-media" src="<?= htmlspecialchars(arhiton_asset_path('/images/categories/categories_1.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Скамьи" loading="lazy" decoding="async">
 								<div class="home-category-overlay">	
 									<div class="home-category-icon" aria-hidden="true">
 										<svg viewBox="0 0 64 64" role="img" focusable="false">
@@ -192,10 +59,10 @@ include __DIR__ . '/includes/header.php';
 											<rect x="40" y="14" width="16" height="38"></rect>
 										</svg>
 									</div>
-									<span class="home-category-title">Cкамьи</span>
+									<span class="home-category-title">Скамьи</span>
 								</div>
 							</a>
-							<a class="home-category-card" href="/catalog?category=trash" style="background-image:url('images/categories/categories_2.png');">
+							<a class="home-category-card" href="/catalog?category=trash"><img class="home-category-media" src="<?= htmlspecialchars(arhiton_asset_path('/images/categories/categories_2.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Урны" loading="lazy" decoding="async">
 								<div class="home-category-overlay">
 									<div class="home-category-icon" aria-hidden="true">
 										<svg viewBox="0 0 64 64" role="img" focusable="false">
@@ -207,7 +74,7 @@ include __DIR__ . '/includes/header.php';
 									<span class="home-category-title">Урны</span>
 								</div>
 							</a>
-							<a class="home-category-card" href="/catalog?category=vases" style="background-image:url('images/categories/categories_3.png');">
+							<a class="home-category-card" href="/catalog?category=vases"><img class="home-category-media" src="<?= htmlspecialchars(arhiton_asset_path('/images/categories/categories_3.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Кашпо и вазоны" loading="lazy" decoding="async">
 								<div class="home-category-overlay">
 									<div class="home-category-icon" aria-hidden="true">
 										<svg viewBox="0 0 64 64" role="img" focusable="false">
@@ -219,7 +86,7 @@ include __DIR__ . '/includes/header.php';
 									<span class="home-category-title">Кашпо | Вазоны</span>
 								</div>
 							</a>
-							<a class="home-category-card" href="/catalog?category=lights" style="background-image:url('images/categories/categories_4.png');">
+							<a class="home-category-card" href="/catalog?category=lights"><img class="home-category-media" src="<?= htmlspecialchars(arhiton_asset_path('/images/categories/categories_4.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Уличные светильники" loading="lazy" decoding="async">
 								<div class="home-category-overlay">
 									<div class="home-category-icon" aria-hidden="true">
 										<svg viewBox="0 0 64 64" role="img" focusable="false">
@@ -231,7 +98,7 @@ include __DIR__ . '/includes/header.php';
 									<span class="home-category-title">Уличные светильники</span>
 								</div>
 							</a>
-							<a class="home-category-card" href="/catalog?category=campfire_areas" style="background-image:url('images/categories/categories_5.png');">
+							<a class="home-category-card" href="/catalog?category=campfire_areas"><img class="home-category-media" src="<?= htmlspecialchars(arhiton_asset_path('/images/categories/categories_5.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Зоны кострища" loading="lazy" decoding="async">
 								<div class="home-category-overlay">
 									<div class="home-category-icon" aria-hidden="true">
 										<svg viewBox="0 0 64 64" role="img" focusable="false">
@@ -247,7 +114,7 @@ include __DIR__ . '/includes/header.php';
 									<span class="home-category-title">Зоны кострища</span>
 								</div>
 							</a>
-							<a class="home-category-card" href="/catalog?category=cabins" style="background-image:url('images/categories/categories_6.png');">
+							<a class="home-category-card" href="/catalog?category=cabins"><img class="home-category-media" src="<?= htmlspecialchars(arhiton_asset_path('/images/categories/categories_6.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Кабинки для переодевания" loading="lazy" decoding="async">
 								<div class="home-category-overlay">
 									<div class="home-category-icon" aria-hidden="true">
 										<svg viewBox="0 0 64 64" role="img" focusable="false">
@@ -261,7 +128,7 @@ include __DIR__ . '/includes/header.php';
 									<span class="home-category-title">Кабинки для переодевания</span>
 								</div>
 							</a>
-							<a class="home-category-card" href="/catalog?category=chairs" style="background-image:url('images/categories/categories_7.png');">
+							<a class="home-category-card" href="/catalog?category=chairs"><img class="home-category-media" src="<?= htmlspecialchars(arhiton_asset_path('/images/categories/categories_7.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Шезлонги" loading="lazy" decoding="async">
 								<div class="home-category-overlay">
 									<div class="home-category-icon" aria-hidden="true">
 										<svg viewBox="0 0 64 64" role="img" focusable="false">
@@ -290,11 +157,11 @@ include __DIR__ . '/includes/header.php';
 						<p>Компания Архитон специализируется на производстве малых архитектурных форм для благоустройства дворов, парков, скверов, жилых комплексов и коммерческих объектов. Мы выпускаем решения, рассчитанные на активную уличную эксплуатацию, и подбираем материалы с учетом климата Беларуси.</p>
 					</div>
 					<div class="seo-about-top-images">
-						<img src="images/proizvodit/img_2.png" alt="О производстве">
-						<img src="images/proizvodit/img_3.png" alt="О производстве">
+						<img src="<?= htmlspecialchars(arhiton_asset_path('/images/proizvodit/img_2.webp'), ENT_QUOTES, 'UTF-8') ?>" loading="lazy" decoding="async" alt="О производстве">
+						<img src="<?= htmlspecialchars(arhiton_asset_path('/images/proizvodit/img_3.webp'), ENT_QUOTES, 'UTF-8') ?>" loading="lazy" decoding="async" alt="О производстве">
 					</div>
 					<div class="seo-about-main-image">
-						<img src="images/proizvodit/img_4.png" alt="О производстве">
+						<img src="<?= htmlspecialchars(arhiton_asset_path('/images/proizvodit/img_4.webp'), ENT_QUOTES, 'UTF-8') ?>" loading="lazy" decoding="async" alt="О производстве">
 					</div>
 					<div class="seo-about-text">
 						<p>В работе используем металл, бетон, древесину и комбинированные конструкции, что позволяет создавать как типовые, так и индивидуальные изделия под конкретный проект. Сроки изготовления зависят от объема и сложности, при этом каждый заказ сопровождаем на всех этапах: от согласования модели до отгрузки.</p>

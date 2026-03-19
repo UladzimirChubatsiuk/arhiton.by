@@ -35,7 +35,7 @@ ErrorDocument 404 /404
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    RewriteRule ^favicon\.ico$ /images/logo.png [L]
+    RewriteRule ^favicon\.ico$ /favicon.svg [L]
 
     RewriteCond %{HTTP_HOST} ^www\.arhiton\.by$ [NC]
     RewriteRule ^ https://arhiton.by%{REQUEST_URI} [R=301,L]

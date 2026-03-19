@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/includes/seo.php';
 
 $pageCanonicalPath = '/projects';
@@ -92,8 +92,8 @@ include __DIR__ . '/includes/header.php';
 
 							<div class="portfolio-showcase__grid">
 								<article class="portfolio-showcase__card portfolio-showcase__card--wide">
-									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_0.jpg" data-image-alt="Скамья-тонель для благоустройства общественного пространства" data-gallery-title="Скамья-тонель">
-										<img src="images/portfolio/portfolio_0.jpg" alt="Скамья-тонель для благоустройства общественного пространства" class="img-responsive">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_0.webp'), ENT_QUOTES, 'UTF-8') ?>" data-image-alt="Скамья-тонель для благоустройства общественного пространства" data-gallery-title="Скамья-тонель">
+										<img src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_0.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Скамья-тонель для благоустройства общественного пространства" class="img-responsive" loading="lazy" decoding="async">
 										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
 									</button>
 									<div class="portfolio-showcase__body">
@@ -104,8 +104,8 @@ include __DIR__ . '/includes/header.php';
 								</article>
 
 								<article class="portfolio-showcase__card">
-									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_1.png" data-image-alt="Скамейки для благоустройства сквера по улице Гейсика в Несвиже" data-gallery-title="Скамейки для благоустройства сквера">
-										<img src="images/portfolio/portfolio_1.png" alt="Скамейки для благоустройства сквера по улице Гейсика в Несвиже" class="img-responsive">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_1.webp'), ENT_QUOTES, 'UTF-8') ?>" data-image-alt="Скамейки для благоустройства сквера по улице Гейсика в Несвиже" data-gallery-title="Скамейки для благоустройства сквера">
+										<img src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_1.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Скамейки для благоустройства сквера по улице Гейсика в Несвиже" class="img-responsive" loading="lazy" decoding="async">
 										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
 									</button>
 									<div class="portfolio-showcase__body">
@@ -116,8 +116,8 @@ include __DIR__ . '/includes/header.php';
 								</article>
 
 								<article class="portfolio-showcase__card">
-									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_6.png" data-image-alt="Скамейки для благоустройства города Орша" data-gallery-title="Скамейки для благоустройства города Орша">
-										<img src="images/portfolio/portfolio_6.png" alt="Скамейки для благоустройства города Орша" class="img-responsive">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_6.webp'), ENT_QUOTES, 'UTF-8') ?>" data-image-alt="Скамейки для благоустройства города Орша" data-gallery-title="Скамейки для благоустройства города Орша">
+										<img src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_6.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Скамейки для благоустройства города Орша" class="img-responsive" loading="lazy" decoding="async">
 										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
 									</button>
 									<div class="portfolio-showcase__body">
@@ -128,8 +128,8 @@ include __DIR__ . '/includes/header.php';
 								</article>
 
 								<article class="portfolio-showcase__card">
-									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_2.jpg" data-image-alt="Скамейки и урны для благоустройства Музея Славы Могилевской области" data-gallery-title="Благоустройство Музея Славы Могилевской области">
-										<img src="images/portfolio/portfolio_2.jpg" alt="Скамейки и урны для благоустройства Музея Славы Могилевской области" class="img-responsive">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_2.webp'), ENT_QUOTES, 'UTF-8') ?>" data-image-alt="Скамейки и урны для благоустройства Музея Славы Могилевской области" data-gallery-title="Благоустройство Музея Славы Могилевской области">
+										<img src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_2.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Скамейки и урны для благоустройства Музея Славы Могилевской области" class="img-responsive" loading="lazy" decoding="async">
 										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
 									</button>
 									<div class="portfolio-showcase__body">
@@ -140,8 +140,8 @@ include __DIR__ . '/includes/header.php';
 								</article>
 
 								<article class="portfolio-showcase__card">
-									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_3.png" data-image-alt="Урна для общественных пространств на станциях Минского метрополитена" data-gallery-title="Поставка урн для Минского метрополитена">
-										<img src="images/portfolio/portfolio_3.png" alt="Урна для общественных пространств на станциях Минского метрополитена" class="img-responsive">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_3.webp'), ENT_QUOTES, 'UTF-8') ?>" data-image-alt="Урна для общественных пространств на станциях Минского метрополитена" data-gallery-title="Поставка урн для Минского метрополитена">
+										<img src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_3.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Урна для общественных пространств на станциях Минского метрополитена" class="img-responsive" loading="lazy" decoding="async">
 										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
 									</button>
 									<div class="portfolio-showcase__body">
@@ -152,8 +152,8 @@ include __DIR__ . '/includes/header.php';
 								</article>
 
 								<article class="portfolio-showcase__card">
-									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_4.png" data-image-alt="Изделия для благоустройства пляжей Воложинского района" data-gallery-title="Благоустройство пляжей Воложинского района">
-										<img src="images/portfolio/portfolio_4.png" alt="Изделия для благоустройства пляжей Воложинского района" class="img-responsive">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_4.webp'), ENT_QUOTES, 'UTF-8') ?>" data-image-alt="Изделия для благоустройства пляжей Воложинского района" data-gallery-title="Благоустройство пляжей Воложинского района">
+										<img src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_4.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Изделия для благоустройства пляжей Воложинского района" class="img-responsive" loading="lazy" decoding="async">
 										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
 									</button>
 									<div class="portfolio-showcase__body">
@@ -164,8 +164,8 @@ include __DIR__ . '/includes/header.php';
 								</article>
 
 								<article class="portfolio-showcase__card">
-									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="images/portfolio/portfolio_5.png" data-image-alt="Изделия для благоустройства поселка Стрешин" data-gallery-title="Благоустройство поселка Стрешин">
-										<img src="images/portfolio/portfolio_5.png" alt="Изделия для благоустройства поселка Стрешин" class="img-responsive">
+									<button type="button" class="portfolio-showcase__media js-portfolio-gallery" data-image-src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_5.webp'), ENT_QUOTES, 'UTF-8') ?>" data-image-alt="Изделия для благоустройства поселка Стрешин" data-gallery-title="Благоустройство поселка Стрешин">
+										<img src="<?= htmlspecialchars(arhiton_asset_path('/images/portfolio/portfolio_5.webp'), ENT_QUOTES, 'UTF-8') ?>" alt="Изделия для благоустройства поселка Стрешин" class="img-responsive" loading="lazy" decoding="async">
 										<span class="portfolio-showcase__media-badge">Увеличить фото</span>
 									</button>
 									<div class="portfolio-showcase__body">
@@ -198,3 +198,4 @@ include __DIR__ . '/includes/header.php';
 
 <?php $featuresSectionClass = ' home-page-block'; include __DIR__ . '/includes/features-strip.php'; ?>
 <?php include __DIR__ . '/includes/footer.php'; ?>
+

@@ -168,29 +168,29 @@ include __DIR__ . '/includes/header.php';
 							<p class="contact-card__lead">Для консультации по ассортименту, срокам и заказу выберите удобный канал связи. На быстрые вопросы проще отвечаем в мессенджерах.</p>
 							<div class="contact-card__summary">
 								<a class="contact-card__summary-link" href="tel:+375291182084">
-									<i class="bi bi-telephone-fill" aria-hidden="true"></i>
+									<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.65 1.33a.68.68 0 0 1 .74-.17l2.2.9a.68.68 0 0 1 .4.76l-.37 1.8a.68.68 0 0 1-.57.53l-1.02.15a10.7 10.7 0 0 0 5.67 5.67l.15-1.02a.68.68 0 0 1 .53-.57l1.8-.37a.68.68 0 0 1 .76.4l.9 2.2a.68.68 0 0 1-.17.74l-1.2 1.2c-.33.33-.82.47-1.27.36C6.98 13.45 2.55 9.02 1.1 3.8a1.18 1.18 0 0 1 .36-1.27l1.2-1.2Z"/></svg>
 									<span>Позвонить</span>
 								</a>
 								<a class="contact-card__summary-link" href="mailto:info.arhiton@mail.ru">
-									<i class="bi bi-envelope-fill" aria-hidden="true"></i>
+									<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1.5 3A1.5 1.5 0 0 1 3 1.5h10A1.5 1.5 0 0 1 14.5 3v10A1.5 1.5 0 0 1 13 14.5H3A1.5 1.5 0 0 1 1.5 13V3Zm1.1.3L8 7.1l5.4-3.8a.5.5 0 0 0-.4-.3H3a.5.5 0 0 0-.4.3Zm10.9 1.43-5.21 3.66a.5.5 0 0 1-.57 0L2.5 4.73V13c0 .28.22.5.5.5h10c.28 0 .5-.22.5-.5V4.73Z"/></svg>
 									<span>Написать на email</span>
 								</a>
 							</div>
 							<div class="contact-card__messengers">
 								<a class="contact-card__messenger" href="viber://chat?number=%2B375291182084" aria-label="Viber">
-									<i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+									<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8.93 1.02c2.96.2 5.3 2.47 5.54 5.43.17 2.07-.62 3.96-2.05 5.2-.3.26-.48.65-.45 1.05l.08 1.08c.04.57-.54.98-1.07.76l-1.62-.68c-.3-.12-.62-.15-.93-.08a6.53 6.53 0 0 1-1.52.13C3.4 13.8.6 11 .5 7.5.4 3.87 3.3.78 6.94 1c.66.04 1.33-.03 1.99.02Zm-.4 1.52c-.54-.03-1.1 0-1.65-.03A4.95 4.95 0 0 0 2 7.46a4.96 4.96 0 0 0 6.1 4.82c.56-.14 1.16-.1 1.7.13l.78.33-.04-.53a2.22 2.22 0 0 1 .75-1.88 4.96 4.96 0 0 0 1.66-3.75c-.18-2.2-1.95-3.91-4.42-4.04Zm2.43 5.95c-.22.16-.53.39-.9.65-.28.2-.62.22-.93.06-1.38-.72-2.46-1.84-3.24-3.17-.18-.3-.18-.67.03-.95l.55-.76c.19-.26.56-.3.8-.1l.88.74c.23.2.28.53.12.79l-.3.47c-.07.11-.08.26 0 .37.26.41.61.76 1.02 1.03.11.07.25.07.37 0l.45-.29c.26-.16.6-.12.8.1l.72.79c.22.23.2.6-.04.77Z"/></svg>
 									<span>Viber</span>
 								</a>
 								<a class="contact-card__messenger" href="https://wa.me/375291182084" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-									<i class="bi bi-whatsapp" aria-hidden="true"></i>
+									<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M13.6 2.4A7.45 7.45 0 0 0 2.15 11.5L1 15l3.6-.94A7.45 7.45 0 1 0 13.6 2.4ZM8 14a6 6 0 0 1-3.06-.84l-.22-.13-2.14.56.58-2.08-.14-.22A6 6 0 1 1 8 14Zm3.3-4.41c-.18-.09-1.08-.53-1.25-.59-.17-.06-.29-.09-.42.09-.12.18-.47.59-.57.71-.1.12-.2.13-.38.04-.18-.09-.75-.27-1.43-.86-.53-.47-.9-1.04-1-1.22-.11-.18-.01-.28.08-.36.08-.08.18-.2.27-.3.09-.1.12-.17.18-.29.06-.12.03-.22-.01-.31-.05-.09-.42-1.01-.58-1.39-.15-.36-.31-.31-.42-.31h-.36c-.12 0-.31.04-.48.22-.16.18-.63.61-.63 1.5 0 .88.65 1.73.74 1.85.09.12 1.27 1.95 3.07 2.73 1.81.78 1.81.52 2.14.49.33-.03 1.08-.44 1.23-.87.15-.43.15-.8.1-.87-.04-.08-.16-.12-.34-.21Z"/></svg>
 									<span>WhatsApp</span>
 								</a>
 								<a class="contact-card__messenger" href="https://t.me/Elena_Chubatsiuk" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-									<i class="bi bi-telegram" aria-hidden="true"></i>
+									<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M15.11 2.02 13.1 13.74c-.15.83-.56 1.03-1.15.65l-3.18-2.35-1.53 1.47c-.17.17-.31.31-.64.31l.23-3.27 5.95-5.37c.26-.23-.06-.36-.4-.13L5.03 9.67 1.86 8.68c-.69-.22-.7-.69.14-1.02L14.4 2.88c.58-.21 1.08.13.9 1.14Z"/></svg>
 									<span>Telegram</span>
 								</a>
 								<a class="contact-card__messenger" href="https://www.instagram.com/arhiton.by?igsh=aG1ybXl4anB0ZDA3" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-									<i class="bi bi-instagram" aria-hidden="true"></i>
+									<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4.75 1h6.5A3.75 3.75 0 0 1 15 4.75v6.5A3.75 3.75 0 0 1 11.25 15h-6.5A3.75 3.75 0 0 1 1 11.25v-6.5A3.75 3.75 0 0 1 4.75 1Zm0 1.5A2.25 2.25 0 0 0 2.5 4.75v6.5A2.25 2.25 0 0 0 4.75 13.5h6.5a2.25 2.25 0 0 0 2.25-2.25v-6.5A2.25 2.25 0 0 0 11.25 2.5h-6.5ZM8 4.25A3.75 3.75 0 1 1 4.25 8 3.75 3.75 0 0 1 8 4.25Zm0 1.5A2.25 2.25 0 1 0 10.25 8 2.25 2.25 0 0 0 8 5.75Zm3.9-1.87a.85.85 0 1 1 0 1.7.85.85 0 0 1 0-1.7Z"/></svg>
 									<span>Instagram</span>
 								</a>
 							</div>

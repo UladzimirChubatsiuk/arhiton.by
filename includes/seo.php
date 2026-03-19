@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 const ARHITON_SITE_NAME = 'Архитон';
 const ARHITON_SITE_URL = 'https://arhiton.by';
-const ARHITON_DEFAULT_IMAGE = '/images/banner/hero_5.png';
+const ARHITON_DEFAULT_IMAGE = '/images/banner/hero_5.webp';
 const ARHITON_SITE_LANGUAGE = 'ru-BY';
 
 /**
@@ -27,7 +27,7 @@ function arhiton_site_identity(): array
         'name' => ARHITON_SITE_NAME,
         'legalName' => 'ИП Чубатюк Елена Владимировна',
         'url' => ARHITON_SITE_URL,
-        'logo' => arhiton_absolute_url('/images/logo.png'),
+        'logo' => arhiton_absolute_url('/favicon.svg'),
         'image' => arhiton_absolute_url(ARHITON_DEFAULT_IMAGE),
         'phone' => '+375291182084',
         'phoneDisplay' => '+375 (29) 118-20-84',
@@ -163,13 +163,13 @@ function arhiton_catalog_faq_items(): array
 function arhiton_catalog_category_items(): array
 {
     return [
-        ['name' => 'Скамьи', 'url' => arhiton_absolute_url('/catalog') . '?category=bench', 'image' => '/images/categories/categories_1.png'],
-        ['name' => 'Урны', 'url' => arhiton_absolute_url('/catalog') . '?category=trash', 'image' => '/images/categories/categories_2.png'],
-        ['name' => 'Кашпо и вазоны', 'url' => arhiton_absolute_url('/catalog') . '?category=vases', 'image' => '/images/categories/categories_3.png'],
-        ['name' => 'Уличные светильники', 'url' => arhiton_absolute_url('/catalog') . '?category=lights', 'image' => '/images/categories/categories_4.png'],
-        ['name' => 'Зоны кострища', 'url' => arhiton_absolute_url('/catalog') . '?category=campfire_areas', 'image' => '/images/categories/categories_5.png'],
-        ['name' => 'Кабинки для переодевания', 'url' => arhiton_absolute_url('/catalog') . '?category=cabins', 'image' => '/images/categories/categories_6.png'],
-        ['name' => 'Шезлонги', 'url' => arhiton_absolute_url('/catalog') . '?category=chairs', 'image' => '/images/categories/categories_7.png'],
+        ['name' => 'Скамьи', 'url' => arhiton_absolute_url('/catalog') . '?category=bench', 'image' => '/images/categories/categories_1.webp'],
+        ['name' => 'Урны', 'url' => arhiton_absolute_url('/catalog') . '?category=trash', 'image' => '/images/categories/categories_2.webp'],
+        ['name' => 'Кашпо и вазоны', 'url' => arhiton_absolute_url('/catalog') . '?category=vases', 'image' => '/images/categories/categories_3.webp'],
+        ['name' => 'Уличные светильники', 'url' => arhiton_absolute_url('/catalog') . '?category=lights', 'image' => '/images/categories/categories_4.webp'],
+        ['name' => 'Зоны кострища', 'url' => arhiton_absolute_url('/catalog') . '?category=campfire_areas', 'image' => '/images/categories/categories_5.webp'],
+        ['name' => 'Кабинки для переодевания', 'url' => arhiton_absolute_url('/catalog') . '?category=cabins', 'image' => '/images/categories/categories_6.webp'],
+        ['name' => 'Шезлонги', 'url' => arhiton_absolute_url('/catalog') . '?category=chairs', 'image' => '/images/categories/categories_7.webp'],
     ];
 }
 
@@ -179,13 +179,13 @@ function arhiton_catalog_category_items(): array
 function arhiton_project_items(): array
 {
     return [
-        ['name' => 'Скамья-тонель', 'image' => '/images/portfolio/portfolio_0.jpg'],
-        ['name' => 'Скамейки для благоустройства сквера', 'image' => '/images/portfolio/portfolio_1.png'],
-        ['name' => 'Скамейки для благоустройства города', 'image' => '/images/portfolio/portfolio_6.png'],
-        ['name' => 'Благоустройство Музея Славы', 'image' => '/images/portfolio/portfolio_2.jpg'],
-        ['name' => 'Поставка урн для станций Минского метрополитена', 'image' => '/images/portfolio/portfolio_3.png'],
-        ['name' => 'Благоустройство пляжей', 'image' => '/images/portfolio/portfolio_4.png'],
-        ['name' => 'Благоустройство поселка Стрешин', 'image' => '/images/portfolio/portfolio_5.png'],
+        ['name' => 'Скамья-тонель', 'image' => '/images/portfolio/portfolio_0.webp'],
+        ['name' => 'Скамейки для благоустройства сквера', 'image' => '/images/portfolio/portfolio_1.webp'],
+        ['name' => 'Скамейки для благоустройства города', 'image' => '/images/portfolio/portfolio_6.webp'],
+        ['name' => 'Благоустройство Музея Славы', 'image' => '/images/portfolio/portfolio_2.webp'],
+        ['name' => 'Поставка урн для станций Минского метрополитена', 'image' => '/images/portfolio/portfolio_3.webp'],
+        ['name' => 'Благоустройство пляжей', 'image' => '/images/portfolio/portfolio_4.webp'],
+        ['name' => 'Благоустройство поселка Стрешин', 'image' => '/images/portfolio/portfolio_5.webp'],
     ];
 }
 
@@ -246,7 +246,7 @@ function arhiton_page_defaults(string $path): array
                 'title' => 'Каталог МАФ: скамьи, урны, вазоны и светильники | Архитон',
                 'description' => 'Каталог малых архитектурных форм от производителя: скамьи, урны, вазоны, светильники, кабинки для переодевания и зоны отдыха для благоустройства в Беларуси.',
                 'canonicalPath' => '/catalog',
-                'image' => '/images/categories/categories_1.png',
+                'image' => '/images/categories/categories_1.webp',
                 'headline' => 'Каталог малых архитектурных форм для благоустройства и городской среды',
                 'schemaType' => 'CollectionPage',
                 'breadcrumbs' => [
@@ -270,7 +270,7 @@ function arhiton_page_defaults(string $path): array
                 'title' => 'Проекты благоустройства и реализованные МАФ | Архитон',
                 'description' => 'Реализованные проекты Архитон: скамьи, урны и другие малые архитектурные формы для общественных пространств, городской среды и инфраструктурных объектов.',
                 'canonicalPath' => '/projects',
-                'image' => '/images/portfolio/portfolio_0.jpg',
+                'image' => '/images/portfolio/portfolio_0.webp',
                 'headline' => 'Реализованные проекты Архитон',
                 'schemaType' => 'CollectionPage',
                 'breadcrumbs' => [
@@ -286,7 +286,7 @@ function arhiton_page_defaults(string $path): array
                 'title' => 'О компании Архитон | Производство малых архитектурных форм',
                 'description' => 'Архитон производит малые архитектурные формы для благоустройства общественных пространств, жилых комплексов и городской среды в Беларуси.',
                 'canonicalPath' => '/about-us',
-                'image' => '/images/proizvodit/img_4.png',
+                'image' => '/images/proizvodit/img_4.webp',
                 'headline' => 'О компании Архитон',
                 'schemaType' => 'AboutPage',
                 'breadcrumbs' => [
@@ -766,3 +766,4 @@ function arhiton_render_schema_markup(array $schemas): string
 
     return $markup;
 }
+

@@ -420,6 +420,14 @@ h1, h2, h3, h4, h5, h6, figure {
   background-repeat: no-repeat;
   transition: none;
 }
+.home-category-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .home-category-overlay {
   position: absolute;
   inset: 0;
@@ -1059,7 +1067,7 @@ blockquote p > cite {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../images/loader.gif) center no-repeat #fff;
+  background: #fff;
 }
 
 .js .animate-box {
@@ -1399,8 +1407,11 @@ blockquote p > cite {
   color: #222;
 }
 
-.contact-card__summary-link i {
+.contact-card__summary-link svg {
   font-size: 14px;
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
   line-height: 1;
 }
 
@@ -1435,8 +1446,11 @@ blockquote p > cite {
   text-decoration: none;
 }
 
-.contact-card__messenger i {
+.contact-card__messenger svg {
   font-size: 20px;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
   line-height: 1;
   color: #52d681;
 }
@@ -1983,8 +1997,9 @@ blockquote p > cite {
 }
 .feature-left > .icon {
   float: left;
-  font-size: 34px;
   color: #cccccc;
+  width: 34px;
+  font-size: 30px;
 }
 .feature-left > .copy {
   padding-left: 30px;
@@ -2057,6 +2072,7 @@ blockquote p > cite {
   background: linear-gradient(90deg, rgba(17, 24, 21, 0.84) 0%, rgba(17, 24, 21, 0.54) 38%, rgba(17, 24, 21, 0.18) 70%, rgba(17, 24, 21, 0.05) 100%), linear-gradient(0deg, rgba(17, 24, 21, 0.34) 0%, rgba(17, 24, 21, 0.06) 48%, rgba(17, 24, 21, 0.12) 100%);
 }
 
+.home-hero-slide__content,
 .owl-carousel-fullwidth .item .slider-copy {
   position: absolute;
   top: 50%;
@@ -2085,6 +2101,8 @@ blockquote p > cite {
   color: #e7fff1;
 }
 
+.home-hero-slide__content h1,
+.home-hero-slide__content h2,
 .owl-carousel-fullwidth .item .slider-copy h1,
 .owl-carousel-fullwidth .item .slider-copy h2 {
   color: #fff;
@@ -2165,8 +2183,24 @@ blockquote p > cite {
     min-height: 420px;
   }
 
-  .home-slider-section .owl-carousel-fullwidth .item .slider-copy {
-    display: none;
+  .home-hero-slide__content {
+    left: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .home-hero-slide__content h1,
+  .home-hero-slide__content h2 {
+    font-size: 32px;
+    max-width: none;
+  }
+
+  .home-hero-slide__content p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .home-hero-slide__actions .btn {
+    min-width: 0;
   }
 }
 
@@ -2722,6 +2756,11 @@ blockquote p > cite {
   line-height: 1;
   transition: .2s ease;
 }
+.urban-social-link svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
 
 .urban-social-link:hover {
   color: #000;
@@ -3082,8 +3121,11 @@ blockquote p > cite {
   color: #1f2a24;
 }
 
-.urban-footer-social i {
+.urban-footer-social svg {
   font-size: 16px;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
   line-height: 1;
   color: #52d681;
 }
